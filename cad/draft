@@ -1,0 +1,6 @@
+.doc CAD model/draft transform
+
+std = [
+	std/iso/draft
+	std/gost/ESKD
+]
