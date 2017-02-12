@@ -1,0 +1,5 @@
+.doc map manipulations
+
+coord_system {}
+AWS84::coord_system
+GOST::coord_system

@@ -1,0 +1,12 @@
+.doc local addresses
+
+address {
+	country
+	region
+	city
+	street
+	home
+	flat
+	zip
+	position:loc
+}

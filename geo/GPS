@@ -1,0 +1,10 @@
+.doc GPS data/interface
+
+altitude
+
+longitude
+
+location {
+	altitude
+	longitude
+}
