@@ -1,0 +1,4 @@
+.doc FIFO queue
+
+FIFO{}
+queue::FIFO

@@ -1,0 +1,4 @@
+.doc LIFO stack
+
+LIFO {}
+stack::LIFO
