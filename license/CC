@@ -1,0 +1,9 @@
+
+CC::license {
+	title = Creative Commons
+	vendor = vendor/CC
+}
+
+CC-SA-4::CC {
+	title = CC.title + Attribution ShareAlike 4.0 License
+}

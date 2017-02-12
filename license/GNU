@@ -1,0 +1,3 @@
+GNU::license { vendor = vendor/FSF }
+GPL::GNU { title = 'GNU General Public License (GPL)' } 
+LesserGPL:: GPL { title = 'GNU Lesser General Public License (LGPL)' }
