@@ -1,0 +1,11 @@
+.doc ISO 20022 payment/financial/bank message format EU:260/2012
+
+title = ISO20022
+about = Universal financial industry message scheme
+
+url = [
+	http://www.seb.ee/ru/biznes-klient/povsednevnye-uslugi/scheta-i-raschety/informaciya-o-sepa/format-iso-20022-xml
+]
+
+ISO20022::XML = [
+]
