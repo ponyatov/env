@@ -1,0 +1,13 @@
+vendor/form {
+	str:short	# short name (corp)
+	str:full	# full name (corporation)
+}
+
+microsystems::form { short = 'ms' full='Microsystems' }
+
+corp::form {
+	short = corp
+	full = corporation
+}
+
+inc::form { short = 'inc' full = 'Incorporated' }
