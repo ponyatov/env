@@ -1,0 +1,14 @@
+.doc C++ syntax
+
+Cpp {
+}
+
+Cpp0x:Cpp {
+	STD = std/iso/14882/2003
+	CXXFLAGS = -std=c++0x
+}
+
+Cpp11::Cpp0x {
+	STD = std/iso/14882/2011
+	CXXFLAG = -std=gnu++11
+}
