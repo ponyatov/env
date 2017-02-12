@@ -1,4 +1,6 @@
-cpp.log : cpp.src ./exe.exe Makefile
+go: cpp.log py.log
+
+cpp.log : src.src ./exe.exe Makefile
 	./exe.exe < $< > $@ && tail $(TAIL) $@
 C = cpp.cpp ypp.tab.cpp lex.yy.c
 H = hpp.hpp ypp.tab.hpp meta.hpp
@@ -9,3 +11,6 @@ ypp.tab.cpp : ypp.ypp
 	bison $<
 lex.yy.c : lpp.lpp
 	flex $<
+
+py.log : src.src py.py Makefile
+	python py.py < $< > $@ && tail $(TAIL) $@
