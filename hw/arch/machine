@@ -1,0 +1,6 @@
+.doc generic computer machine
+
+machine {
+	register:Sp;	# stack pointer
+	register:Ip;	# instruction pointer
+}

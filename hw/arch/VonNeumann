@@ -1,7 +1,8 @@
 .doc VonNeumann architecture
 
-VonNeumann::arch {
+VonNeumann::machine {
 	doc = [
 		wiki = https://en.wikipedia.org/wiki/Von_Neumann_architecture
 	]
+	M[Msz];		# common program/data memory
 }

@@ -1,0 +1,4 @@
+.doc memory machine
+
+M_machine::(VonNeumann|Harvard) {
+}

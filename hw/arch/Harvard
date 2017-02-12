@@ -1,7 +1,10 @@
 .doc Harvard architecture
 
-Harvard::arch {
+Harvard::arch {	# Harvard machine
 	doc = [
 		wiki = https://en.wikipedia.org/wiki/Harvard_architecture
 	]
+	memory:P[Psz];		# program memory
+	memory:D[Dsz];		# data memory
+	memory:S[Ssz];		# stack memory
 }

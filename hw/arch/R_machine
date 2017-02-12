@@ -1,16 +1,5 @@
 .doc register generic RISC machine
 
-R_machine {
-	reg[Rmax];	# registers file
-	
-	VonNeumann:	# vonneumann variant
-		M[Msz];		# program/data memory
-	
-	Harvard: [	# harvard variant
-		P[Psz];		# program memory
-		D[Dsz];		# data memory
-		S[Ssz];		# stack memory
-	]
-	Sp;			# stack pointer
-	Ip;			# instruction pointer
+R_machine::(VonNeumann|Harvard) {
+	register::R[Rmax];	# registers file
 }
