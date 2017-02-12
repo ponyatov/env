@@ -1,5 +1,10 @@
 .doc Makefile for lexical core rebuild
 
+make [
+	unix: make
+	win32: mingw32-make
+]
+
 Makefile = [
 
 log.log : src.src ./exe.exe Makefile
