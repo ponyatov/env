@@ -1,7 +1,12 @@
-.doc files for system core rebuild
+.doc lexical skeleton project files
 
-core	=	[ parser/parser/ypp.ypp lpp.lpp hpp.hpp cpp.cpp 
-	core/make/Makefile ]
+core	=	[
+	parser/parser/ypp.ypp	# parser
+	parser/lexer/lpp.lpp	# lexer
+	hpp.hpp					# C(++) headers
+	cpp.cpp 				# C(++) core part
+	core/make/Makefile		# project build script
+]
 
 files	=	[ src.src core .gitignore gvim ide/vim/helper ]
 gvim	=	[ ide/vim/helper ide/vim/ftdetect.vim ide/vim/syntax.vim ]
