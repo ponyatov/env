@@ -13,5 +13,6 @@ Sym* Op::eval(Sym*E) {
 			if (val=="*") return nest[0]->mul(nest[1]);
 			if (val=="/") return nest[0]->div(nest[1]);
 			if (val=="^") return nest[0]->pow(nest[1]);
+			if (val=="?=") return nest[0]->ass(nest[1]);
 	}
 	return this; }

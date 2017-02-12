@@ -38,3 +38,7 @@ Sym* Num::pow(Sym*o) {
 	if (o->tag=="num") return new Num(std::pow(val,dynamic_cast<Num*>(o)->val));
 	return Sym::pow(o);
 }
+
+Sym* Num::ass(Sym*o) {
+	if (tag==o->tag && abs(val - dynamic_cast<Num*>(o)->val)<1e-9) return ok(o);
+	else return fail(o); }

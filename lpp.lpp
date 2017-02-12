@@ -8,6 +8,8 @@ N	[0-9]+
 %%
 #.*						{}					// drop comments
 
+\?\=					TOC(Op,ASS)			// assert ?=
+
 \=						TOC(Op,EQ)			// operators
 \@						TOC(Op,AT)
 

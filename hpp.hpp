@@ -30,13 +30,16 @@ struct Sym {
 	virtual Sym* mul(Sym*);		// A * B
 	virtual Sym* div(Sym*);		// A / B
 	virtual Sym* pow(Sym*);		// A ^ B
+	virtual Sym* ass(Sym*);		// assert A==B
+	Sym* ok(Sym*);					// test:ok
+	Sym* fail(Sym*);				// test:fail
 };
 
 struct Env:Sym { Env(string); };			// \ environment
 extern Env *glob;							// <env:global>
 extern void glob_init();					// / init
 
-struct Error:Sym { Error(string); };		// error
+struct Error:Sym { Error(string); Error(Sym*); };	// error
 
 struct Int:Sym {
 	Int(string); Int(long); long val;		// integer
@@ -44,7 +47,7 @@ struct Int:Sym {
 	Sym* pfxadd(); Sym* pfxsub();
 	Sym* add(Sym*); Sym* sub(Sym*);
 	Sym* mul(Sym*); Sym* div(Sym*);
-	Sym* pow(Sym*);
+	Sym* pow(Sym*); Sym* ass(Sym*);
 	};
 struct Num:Sym {							// floating number
 	Num(string); Num(double); double val;
@@ -52,7 +55,7 @@ struct Num:Sym {							// floating number
 	Sym* pfxadd(); Sym* pfxsub();
 	Sym* add(Sym*); Sym* sub(Sym*);
 	Sym* mul(Sym*); Sym* div(Sym*);
-	Sym* pow(Sym*);
+	Sym* pow(Sym*); Sym* ass(Sym*);
 	};
 
 struct Op:Sym { Op(string);		// operator

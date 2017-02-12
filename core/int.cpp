@@ -43,3 +43,7 @@ Sym* Int::pow(Sym*o) { // A^B
 	if (o->tag=="num") return new Num(std::pow(val,dynamic_cast<Num*>(o)->val));
 	return Sym::add(o);
 }
+
+Sym* Int::ass(Sym*o) {
+	if (tag==o->tag && val == dynamic_cast<Int*>(o)->val) return ok(o);
+	else return fail(o); }

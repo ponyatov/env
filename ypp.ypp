@@ -9,9 +9,11 @@
 %token <o> EQ AT TILD COMMA COLON	/* operators: = @ ~ , : */
 %token <o> ADD SUB MUL DIV POW		/* + - * / ^ */
 %token <o> EOL						/* end-of-line */
+%token <o> ASS						/* assert: ?= */
  
 %type <o> ex scalar		/* expression scalar */
 
+%right ASS
 %left ADD SUB
 %left MUL DIV
 %left POW
@@ -40,3 +42,4 @@ ex : ex SUB ex			{ $$=$2; $$->push($1); $$->push($3); } ;
 ex : ex MUL ex			{ $$=$2; $$->push($1); $$->push($3); } ;
 ex : ex DIV ex			{ $$=$2; $$->push($1); $$->push($3); } ;
 ex : ex POW ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+ex : ex ASS ex			{ $$=$2; $$->push($1); $$->push($3); } ;

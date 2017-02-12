@@ -32,3 +32,11 @@ Sym* Sym::sub(Sym*o) { return new Error(head()+" - "+o->head()); }
 Sym* Sym::mul(Sym*o) { return new Error(head()+" * "+o->head()); }
 Sym* Sym::div(Sym*o) { return new Error(head()+" / "+o->head()); }
 Sym* Sym::pow(Sym*o) { return new Error(head()+" ^ "+o->head()); }
+
+Sym* Sym::ass(Sym*o) {
+	if (tag==o->tag && val==o->val) return ok(o); else return fail(o);
+}
+
+Sym* Sym::ok(Sym*o) { return (new Sym("test:ok"))->push(this)->push(o); }
+Sym* Sym::fail(Sym*o) {
+	return new Error( (new Sym("test:fail"))->push(this)->push(o) ); }
