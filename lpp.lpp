@@ -1,0 +1,27 @@
+%{
+#include "hpp.hpp"
+%}
+%option noyywrap yylineno
+											// rex macro
+S	[\+\-]?
+N	[0-9]+
+%%
+#.*						{}					// drop comments
+
+\=						TOC(Sym,SYM)		// operators
+\@						TOC(Sym,SYM)
+
+\+						TOC(Op,ADD)
+\-						TOC(Sym,SYM)
+\*						TOC(Sym,SYM)
+\/						TOC(Sym,SYM)
+\^						TOC(Sym,SYM)
+
+{N}(\.{N})?[eE]{S}{N}	TOC(Num,NUM)		// number
+{N}\.{N}				TOC(Num,NUM)		
+{N}						TOC(Int,INT)		// integer
+
+[a-zA-Z0-9_]+			TOC(Sym,SYM)		// symbol
+
+[ \t\r\n]+				{}					// drop spaces
+.						{yyerror("lexer");}	// undef char
