@@ -1,0 +1,5 @@
+name = Massachusetts Institute of Technology
+
+lab = [
+	AIL { title = 'Artificial Intelligence Laboratory' }
+]

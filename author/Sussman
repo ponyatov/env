@@ -1,0 +1,5 @@
+name = Gerald Jay Sussman
+institute = [
+	author/MIT
+]
+book = book/SICP

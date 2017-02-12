@@ -1,0 +1,42 @@
+name = Richard Matthew Stallman
+nick = RMS
+born = March 16, 1953, geo/NY
+url = https://en.wikipedia.org/wiki/Richard_Stallman
+institut = [
+	Harvard University,
+	Massachusetts Institute of Technology
+]
+
+books = [
+
+{
+year = 1980 
+title = EMACS: The Extensible, Customizable, Self-Documenting Display Editor. 
+pub = [ geo/Cambridge author/MIT/AIL ]  
+publication = AIM-519A.
+}
+
+{
+year = 2002
+title = GNU Emacs Manual.
+pub = geo/Boston: GNU Press. 
+ISBN = 1-882114-85-X
+}
+
+{
+author = [ McGrath, Roland; & Smith, Paul D ]
+year = 2004 
+title = GNU Make: A Program for Directed Compilation
+pub = geo/Boston: GNU Press 
+ISBN = 1-882114-83-3
+}
+
+{
+year = 2010
+title = Free Software, Free Society: Selected Essays of author/Stallman/name
+edition = second 
+pub = geo/Boston GNU Press
+ISBN = 978-0-9831592-0-9
+}
+
+]
