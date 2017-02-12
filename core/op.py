@@ -12,4 +12,5 @@ class Op(Sym):
             if self.val == '*': return self.nest[0].mul(self.nest[1])
             if self.val == '/': return self.nest[0].div(self.nest[1])
             if self.val == '^': return self.nest[0].pow(self.nest[1])
+            if self.val == '?=': return self.nest[0].ass(self.nest[1])
         raise BaseException(self.dump())

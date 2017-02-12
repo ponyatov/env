@@ -9,7 +9,8 @@ import ply.lex  as lex
 import ply.yacc as yacc
 
 tokens = [ 'SYM' , 'INT', 'NUM', 'EOL',
-          'ADD', 'SUB', 'MUL', 'DIV', 'POW'
+          'ADD', 'SUB', 'MUL', 'DIV', 'POW',
+          'ASS'
           ]
 
 t_ignore = ' \t\r'
@@ -18,6 +19,10 @@ def t_EOL(t):
     r'\n'
     t.lexer.lineno += 1
     t.value = Op('EOL') ; return t
+
+def t_ASS(t):
+    r'\?\='
+    t.value = Op(t.value) ; return t
 
 def t_ADD(t):
     r'\+'
@@ -43,6 +48,7 @@ def t_INT(t):
     t.value = Int(t.value) ; return t
     
 precedence = [
+    ('nonassoc','ASS'),
     ('left','ADD','SUB'),
     ('left','MUL','DIV'),
     ('left','POW'),
@@ -90,6 +96,10 @@ def p_ex_div(p):
     p[0] = p[2] ; p[0] += p[1] ; p[0] += p[3]
 def p_ex_pow(p):
     ' ex : ex POW ex '
+    p[0] = p[2] ; p[0] += p[1] ; p[0] += p[3]
+
+def p_ex_ass(p):
+    ' ex : ex ASS ex '
     p[0] = p[2] ; p[0] += p[1] ; p[0] += p[3]
 
 def t_error(t): raise BaseException('lexer/error %s' % t)

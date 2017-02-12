@@ -19,3 +19,6 @@ class Num(Sym):
     def pow(self, o):
         if o.tag in ['int','num']: return Num(self.val ** o.val)
         return Sym.pow(self, o)
+    def ass(self, o): # assert=
+        if self.tag == o.tag and abs(self.val - o.val) < 1e-9: return self.ok(o)
+        else: self.fail(o)

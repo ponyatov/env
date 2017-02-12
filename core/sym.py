@@ -1,4 +1,3 @@
-
 class Sym:
     tag = 'sym'
     def __init__(self, V): self.val = V ; self.nest = [] ; self.attr = {}
@@ -20,6 +19,11 @@ class Sym:
     def mul(self, o): raise BaseException(self.head() + ' * ' + o.head())
     def div(self, o): raise BaseException(self.head() + ' / ' + o.head())
     def pow(self, o): raise BaseException(self.head() + ' ^ ' + o.head())
+    def ass(self, o): # assert=
+        if self.tag==o.tag and self.val==o.val: return self.ok(o)
+        else: self.fail(o)
+    def ok(self,o): return Sym('test:ok').push(self).push(o)
+    def fail(self,o): raise BaseException(Sym('test:fail').push(self).push(o))
 
 class Env(Sym): tag = 'env'
 glob = Env('global')
