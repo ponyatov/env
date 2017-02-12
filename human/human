@@ -1,0 +1,5 @@
+.doc human class
+
+human {
+	sex = [man woman other]
+}
