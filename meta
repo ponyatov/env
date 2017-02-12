@@ -3,4 +3,9 @@ TITLE	=	magic SDK environment
 ABOUT	=	interactive SmallTalk-like / Pythonic syntax environment
 AUTHOR	=	credits/dponyatov
 LICENSE	=	GNU LesserGPL
-GITHUB	=	git clone -o gh git@github.com:ponyatov/env.git 
+GITHUB	=	https://github.com/ponyatov/env
+LOGO	=	logo64x64
+
+README.md = [
+	# 
+]
