@@ -1,0 +1,7 @@
+.doc Pebble smartWatch
+
+Pebble::SmartWatch {
+	lcd = 320x240
+	color = bw
+	bt = true
+}
