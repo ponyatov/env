@@ -1,5 +1,5 @@
 MODULE	=	env
-TITLE	=	magic SDK environment
+TITLE	=	magic SDK environment [human programming approach]
 ABOUT	=	interactive SmallTalk-like / Pythonic syntax environment
 AUTHOR	=	credits/dponyatov
 LICENSE	=	GNU LesserGPL

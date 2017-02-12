@@ -1,5 +1,5 @@
 # ![logo](icon/hedge64x64.png) env
-### magic SDK environment
+### magic SDK environment [human programming approach]
 
 interactive SmallTalk-like / Pythonic syntax environment
 
