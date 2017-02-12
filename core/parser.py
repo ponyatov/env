@@ -54,9 +54,9 @@ def p_REPL_eol(p):  ' REPL : REPL EOL '
 def p_REPL(p):
     ' REPL : REPL ex '
     print p[2]
-    print '-' * 20
+    print '-' * 20,
     print p[2].eval(glob).dump()
-    print '-' * 20
+    print '-' * 20,
     print glob
     print '=' * 40
 
