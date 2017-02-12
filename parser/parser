@@ -1,0 +1,7 @@
+.doc bI script yacc/bison parser
+
+ypp.ypp = [
+header
+footer
+]
+

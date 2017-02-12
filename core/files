@@ -1,0 +1,15 @@
+.doc files for system core rebuild
+
+core	=	[ parser/parser/ypp.ypp lpp.lpp hpp.hpp cpp.cpp 
+	core/make/Makefile ]
+
+files	=	[ src.src core .gitignore gvim ide/vim/helper ]
+gvim	=	[ ide/vim/helper ide/vim/ftdetect.vim ide/vim/syntax.vim ]
+
+.doc command for project (re)generation
+
+genproject = mkdir MODULE ; cd MODULE ; touch files
+
+.doc git clone from master repository
+
+gitclone = git clone -o gh meta/GITHUB
