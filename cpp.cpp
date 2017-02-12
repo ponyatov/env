@@ -1,9 +1,7 @@
 #include "hpp.hpp"
 #define YYERR "\n\n"<<yylineno<<": "<<msg<<" ["<<yytext<<"]\n\n"
 void yyerror(string msg) { cout<<YYERR; cerr<<YYERR; exit(-1); }
-int main() {
-	cout.width(15); cout.precision(numeric_limits<double>::digits10 + 1);
-	glob_init(); return yyparse(); }
+int main() { glob_init(); return yyparse(); }
 
 Sym::Sym(string T, string V) { tag = T; val = V; }
 Sym::Sym(string V):Sym("sym",V){}
@@ -44,6 +42,7 @@ Int::Int(string V):Sym("int","") { val = atoi(V.c_str()); }
 Int::Int(long N):Sym("int","") { val = N; }
 Sym* Int::eval(Sym*E) { return this; }
 string Int::head() { ostringstream os;
+	os.precision(numeric_limits<long>::digits10 + 1);
 	os <<"<"<< tag <<":"<< val <<"> @"<<this ; return os.str(); }
 Sym* Int::pfxadd() { return this; }
 Sym* Int::pfxsub() { return new Int(-val); }
@@ -54,10 +53,40 @@ Sym* Int::add(Sym*o) {
 	return Sym::add(o);
 }
 
+Sym* Int::sub(Sym*o) {
+	if (o->tag=="int") return new Int(val - /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val - /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::add(o);
+}
+
+Sym* Int::mul(Sym*o) {
+	if (o->tag=="int") return new Int(val * /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val * /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::add(o);
+}
+
+Sym* Int::div(Sym*o) {
+	if (o->tag=="int") return new Int(val / /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val / /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::add(o);
+}
+
+Sym* Int::pow(Sym*o) { // A^B
+	if (o->tag=="int") { // int:B
+		if (dynamic_cast<Int*>(o)->val <0) // B<0
+			return new Num(std::pow(val,dynamic_cast<Int*>(o)->val));
+		long r = 1; for (int i=0;i<dynamic_cast<Int*>(o)->val;i++) r *= val;
+		return new Int(r);
+	}
+	if (o->tag=="num") return new Num(std::pow(val,dynamic_cast<Num*>(o)->val));
+	return Sym::add(o);
+}
+
 Num::Num(string V):Sym("num","") { val = atof(V.c_str()); }
 Num::Num(double D):Sym("num","") { val = D; }
 Sym* Num::eval(Sym*E) { return this; }
 string Num::head() { ostringstream os;
+	os.precision(numeric_limits<double>::digits10 + 1);
 	os <<"<"<< tag <<":"<< val <<"> @"<<this ; return os.str(); }
 Sym* Num::pfxadd() { return this; }
 Sym* Num::pfxsub() { return new Num(-val); }

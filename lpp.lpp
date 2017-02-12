@@ -18,10 +18,12 @@ N	[0-9]+
 \^						TOC(Op,POW)
 
 {N}(\.{N})?[eE]{S}{N}	TOC(Num,NUM)		// number
-{N}\.{N}				TOC(Num,NUM)		
+({N})?\.{N}				TOC(Num,NUM)
+{N}\.({N})?				TOC(Num,NUM)
 {N}						TOC(Int,INT)		// integer
 
 [a-zA-Z0-9_]+			TOC(Sym,SYM)		// symbol
 
-[ \t\r\n]+				{}					// drop spaces
+\n						TOC(Op,EOL)			// end of line
+[ \t\r]+				{}					// drop spaces
 .						{yyerror("lexer");}	// undef char

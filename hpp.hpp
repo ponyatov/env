@@ -5,6 +5,7 @@
 #include <limits>
 #include <sstream>
 #include <cstdlib>
+#include <cmath>
 #include <vector>
 #include <map>
 using namespace std;
@@ -41,8 +42,9 @@ struct Int:Sym {
 	Int(string); Int(long); long val;		// integer
 	string head(); Sym*eval(Sym*);
 	Sym* pfxadd(); Sym* pfxsub();
-	Sym* add(Sym*); // Sym* sub(Sym*);
-//	Sym* mul(Sym*); Sym* div(Sym*); Sym* pow(Sym*);
+	Sym* add(Sym*); Sym* sub(Sym*);
+	Sym* mul(Sym*); Sym* div(Sym*);
+	Sym* pow(Sym*);
 	};
 struct Num:Sym {							// floating number
 	Num(string); Num(double); double val;

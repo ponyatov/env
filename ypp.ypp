@@ -8,6 +8,7 @@
 %token <o> LP RP LQ RQ LC RC	/* brackets: () [] {}						*/
 %token <o> EQ AT TILD COMMA COLON	/* operators: = @ ~ , : */
 %token <o> ADD SUB MUL DIV POW		/* + - * / ^ */
+%token <o> EOL						/* end-of-line */
  
 %type <o> ex scalar		/* expression scalar */
 
@@ -17,7 +18,9 @@
 %right PFX
 
 %%
-REPL : | REPL ex		{ cout << $2->dump();
+REPL : ;
+REPL : REPL EOL ;
+REPL : REPL ex			{ cout << $2->dump();
 						  cout << "\n------------------------------------";
 						  cout << $2->eval(glob)->dump();
 						  cout << "\n------------------------------------";
