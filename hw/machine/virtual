@@ -1,0 +1,5 @@
+.doc virtual machine
+
+VM {
+	state:image		# VM state (memory, stacks, registers,..)
+}

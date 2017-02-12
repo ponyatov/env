@@ -1,0 +1,5 @@
+.doc .NET [C]ommon [L]anguage [R]untime
+
+CLR::virtual,machine {
+	vendor = vendor/microsoft
+}
