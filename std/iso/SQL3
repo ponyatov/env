@@ -1,0 +1,6 @@
+.doc ISO XML SQL/3
+
+syntax = [
+ syntax/SQL/3
+ syntax/XML
+] 
