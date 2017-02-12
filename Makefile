@@ -12,5 +12,7 @@ ypp.tab.cpp : ypp.ypp
 lex.yy.c : lpp.lpp
 	flex $<
 
-py.log : src.src py.py Makefile
-	python py.py < $< > $@ && tail $(TAIL) $@
+PY = core/__init__.py core/parser.py core/sym.py core/int.py core/num.py
+PY += core/op.py  
+py.log : src.src $(PY) Makefile
+	python -c "import core" < $< > $@ && tail $(TAIL) $@
