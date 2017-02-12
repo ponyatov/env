@@ -1,0 +1,8 @@
+.doc URL class
+
+url {
+	lex = {protocol}://[a-z0-9_/?]+
+	str:alt
+	html:head
+	
+}
