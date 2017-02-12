@@ -4,7 +4,28 @@ title = ISO20022
 about = Universal financial industry message scheme
 
 url = [
+ru:[
 	http://www.seb.ee/ru/biznes-klient/povsednevnye-uslugi/scheta-i-raschety/informaciya-o-sepa/format-iso-20022-xml
+	Банк России [
+		http://www.cbr.ru/PSystem/?PrtId=s_t_20022
+		Стандарт ISO 20022 : \
+			http://www.cbr.ru/psystem/p-sys/iso_20022.pdf
+		Методологические основы стандарта ISO 20022 : \
+			http://www.cbr.ru/psystem/p-sys/method_iso_20022.pdf
+		Инициирование платежей [
+			http://www.cbr.ru/PSystem/iso/init_MDR1.pdf
+			http://www.cbr.ru/PSystem/iso/init_MDR2.pdf
+		]
+		Платежный клиринг и расчет [
+			http://www.cbr.ru/PSystem/iso/klir_MDR1.pdf
+			http://www.cbr.ru/PSystem/iso/klir_MDR2.pdf
+		]
+		Управление денежными средствами на уровне банк-клиент [
+			http://www.cbr.ru/PSystem/iso/manag_MDR1.pdf
+			http://www.cbr.ru/PSystem/iso/manag_MDR2.pdf
+		]
+	]
+]
 ]
 
 ISO20022::XML = [
