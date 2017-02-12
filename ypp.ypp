@@ -25,7 +25,7 @@ REPL : REPL ex			{ cout << $2->dump();
 						  cout << $2->eval(glob)->dump();
 						  cout << "\n------------------------------------";
 						  cout << glob->dump();
-						  cout << "\n===================================="; } ;
+						  cout << "\n====================================\n"; } ;
 
 ex : scalar ;
 scalar : SYM | INT | NUM | STR ;
