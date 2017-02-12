@@ -8,14 +8,14 @@ N	[0-9]+
 %%
 #.*						{}					// drop comments
 
-\=						TOC(Sym,SYM)		// operators
-\@						TOC(Sym,SYM)
+\=						TOC(Op,EQ)			// operators
+\@						TOC(Op,AT)
 
 \+						TOC(Op,ADD)
-\-						TOC(Sym,SYM)
-\*						TOC(Sym,SYM)
-\/						TOC(Sym,SYM)
-\^						TOC(Sym,SYM)
+\-						TOC(Op,SUB)
+\*						TOC(Op,MUL)
+\/						TOC(Op,DIV)
+\^						TOC(Op,POW)
 
 {N}(\.{N})?[eE]{S}{N}	TOC(Num,NUM)		// number
 {N}\.{N}				TOC(Num,NUM)		

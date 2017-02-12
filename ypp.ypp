@@ -11,14 +11,29 @@
  
 %type <o> ex scalar		/* expression scalar */
 
+%left ADD SUB
+%left MUL DIV
+%left POW
 %right PFX
 
 %%
-REPL : | REPL ex		{ cout << $2->dump() << endl; } ;
+REPL : | REPL ex		{ cout << $2->dump();
+						  cout << "\n------------------------------------";
+						  cout << $2->eval(glob)->dump();
+						  cout << "\n------------------------------------";
+						  cout << glob->dump();
+						  cout << "\n===================================="; } ;
 
 ex : scalar ;
 scalar : SYM | INT | NUM | STR ;
 
+ex : ex EQ ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+ex : ex AT ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+
 ex : ADD ex %prec PFX	{ $$=$1; $$->push($2); } ;
 ex : SUB ex %prec PFX	{ $$=$1; $$->push($2); } ;
 ex : ex ADD ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+ex : ex SUB ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+ex : ex MUL ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+ex : ex DIV ex			{ $$=$2; $$->push($1); $$->push($3); } ;
+ex : ex POW ex			{ $$=$2; $$->push($1); $$->push($3); } ;

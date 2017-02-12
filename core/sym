@@ -8,6 +8,8 @@ sym::class {
 		nest = []			# nest[]ed elements (subtrees)
 		attr = {}			# attr{}ibutes
 		}
+	
+	lookup = {str:V attr.V }
 		
 	pad = {int:n '\t'*n}					# left pad tree element
 	head = {'<%s:%s> @%s'%(tag,val,id++)}	# <T:V> @ID header
@@ -19,4 +21,13 @@ sym::class {
 			} | attr
 		for j in nest S += j.dump(depth+1) # net[]ed dump
 		^S }								# / return result
+		
+	eval = {}
+	pfxadd = {}
+	pfxsub = {}
+	add = {B:val + B.val}
+	sub = {B:val - B.val}
+	mul = {B:val * B.val}
+	div = {B:val / B.val}
+	pow = {B:val ^ B.val}
 }
