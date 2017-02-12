@@ -1,4 +1,4 @@
-woman::man {
+woman::sex {
 	sex = W
 	logic = fuzzi
 }

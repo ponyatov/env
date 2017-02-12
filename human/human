@@ -1,7 +1,7 @@
 .doc human class
 
 human {
-	sex = (man | woman |other)
+	sex:sex
 	years:age
 	cm:height
 	name
