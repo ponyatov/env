@@ -1,0 +1,11 @@
+.doc generic CPU specification
+
+cpu {
+	word: [8 16 24 32 64 128] bit	# word size variants
+	arch: [RISC CISC]				# arch variants
+	dsp: [no fixed float]			# DSP subcore with fixed/floating
+	manufacturer : electronix/manufacturer
+	clock = [ core:mhz ]			# core clock
+	timer = []						# internal timers
+	bus: hw/bus
+}

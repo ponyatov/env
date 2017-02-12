@@ -1,0 +1,13 @@
+ISA::bus/parallel {
+	ctrl [
+		RW [ R:signal W:signal ]
+		
+	]
+}
+
+ISA8::ISA {
+	width = 16
+	multiplex = true
+}
+
+ISA16::ISA8

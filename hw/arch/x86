@@ -1,0 +1,13 @@
+.doc Intel x86 architecture
+
+x86::arch,CISC {
+
+	real_mode : [		# real mode variant
+		word = 16 bit
+	]
+	protected_mode : [	# protected mode variant
+	]
+}
+
+i8086::cpu,x86
+i80826::8086,x86/protected_mode

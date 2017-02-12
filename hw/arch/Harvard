@@ -1,0 +1,7 @@
+.doc Harvard architecture
+
+Harvard::arch {
+	doc = [
+		wiki = https://en.wikipedia.org/wiki/Harvard_architecture
+	]
+}

@@ -1,0 +1,7 @@
+.doc VonNeumann architecture
+
+VonNeumann::arch {
+	doc = [
+		wiki = https://en.wikipedia.org/wiki/Von_Neumann_architecture
+	]
+}

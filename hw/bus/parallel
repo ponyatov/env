@@ -1,0 +1,15 @@
+parallel::bus {
+	width::bits
+	multiplex::bool
+	addr::width			# address bus
+	data::width			# data bus
+	ctrl::width	[		# control
+		bank::width			# RAM banking
+		dma::width			# DMA
+		RW::width			# R/W singnals
+		IO::width			# MEM/IO selectors
+		IRQ::width
+		multi::width		# mltiplex control
+	]
+	power::bits
+}
