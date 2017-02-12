@@ -1,5 +1,18 @@
 .doc human class
 
 human {
-	sex = [man woman other]
+	sex = (man | woman |other)
+	years:age
+	cm:height
+	name
+	contacts {
+		telephone:tel[] = (mobile|home)
+		email
+		skype
+		website
+		github
+	}
+	address:addr
+	location::loc
+	medic::data
 }
