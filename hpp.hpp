@@ -50,7 +50,9 @@ struct Num:Sym {							// floating number
 	Num(string); Num(double); double val;
 	string head(); Sym*eval(Sym*);
 	Sym* pfxadd(); Sym* pfxsub();
-	Sym* mul(Sym*);
+	Sym* add(Sym*); Sym* sub(Sym*);
+	Sym* mul(Sym*); Sym* div(Sym*);
+	Sym* pow(Sym*);
 	};
 
 struct Op:Sym { Op(string);		// operator

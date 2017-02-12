@@ -1,4 +1,4 @@
-cpp.log : src.src ./exe.exe Makefile
+cpp.log : src.src ./exe.exe Makefile py.log
 	./exe.exe < $< > $@ && tail $(TAIL) $@
 C = cpp.cpp ypp.tab.cpp lex.yy.c
 C += core/sym.cpp core/error.cpp core/int.cpp

@@ -9,7 +9,32 @@ string Num::head() { ostringstream os;
 Sym* Num::pfxadd() { return this; }
 Sym* Num::pfxsub() { return new Num(-val); }
 
+Sym* Num::add(Sym*o) {
+	if (o->tag=="int") return new Num(val + /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val + /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::add(o);
+}
+
+Sym* Num::sub(Sym*o) {
+	if (o->tag=="int") return new Num(val - /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val - /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::sub(o);
+}
+
 Sym* Num::mul(Sym*o) {
-	if (o->tag!=tag) return Sym::mul(o);
-	return new Num(val * /**/ dynamic_cast<Num*>(o)->val);
+	if (o->tag=="int") return new Num(val * /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val * /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::mul(o);
+}
+
+Sym* Num::div(Sym*o) {
+	if (o->tag=="int") return new Num(val / /**/ dynamic_cast<Int*>(o)->val);
+	if (o->tag=="num") return new Num(val / /**/ dynamic_cast<Num*>(o)->val);
+	return Sym::div(o);
+}
+
+Sym* Num::pow(Sym*o) {
+	if (o->tag=="int") return new Num(std::pow(val,dynamic_cast<Int*>(o)->val));
+	if (o->tag=="num") return new Num(std::pow(val,dynamic_cast<Num*>(o)->val));
+	return Sym::pow(o);
 }
