@@ -1,6 +1,7 @@
 *~
 *.swp
 *.exe
+*.pyc
 *.log
 ypp.tab.?pp
 lex.yy.c
