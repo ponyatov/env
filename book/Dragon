@@ -1,0 +1,44 @@
+title = Compilers: Principles, Techniques, and Tools
+
+url = https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools
+
+edition = [
+
+	first = [
+		subtitle = 'red'
+		ISBN = 0-201-10088-6
+		year = 1986
+
+author = [
+	author/Aho
+	author/Sethi
+	author/Ulmann
+]
+
+		topics = [
+Compiler structure
+Lexical analysis (including regular expressions and finite automata)
+Syntax analysis (including context-free grammars, LL parsers, bottom-up parsers, and LR parsers)
+Syntax-directed translation
+Type checking (including type conversions and polymorphism)
+Run-time environment (including parameter passing, symbol tables and register allocation)
+Code generation (including intermediate code generation)
+Code optimization
+]
+	]
+	
+	second = [
+		subtitle = 'purple'
+		year = 2006
+		ISBN = 0-321-48681-1
+		author = first.author + [Monica S. Lam]
+		topics = first.topics + [
+Directed translation
+New data flow analyses
+Parallel machines
+Garbage collection
+New case studies
+		]
+	]
+	
+]

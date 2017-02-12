@@ -1,0 +1,194 @@
+title = Dedalus: Datalog in Time and Space
+subtitle = Technical Report No. UCB/EECS-2009-173
+
+url = [
+	http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.html
+	https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.pdf
+]
+
+pub = 'Electrical Engineering and Computer Sciences University of California at Berkeley'
+
+date = December 16, 2009
+
+bibtex = [
+@techreport{Alvaro:EECS-2009-173,
+    Author = {Alvaro, Peter and Marczak, William and Conway, Neil and 
+    Hellerstein, Joseph M. and Maier, David and Sears, Russell C},
+    Title = {Dedalus: Datalog in Time and Space},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2009},
+    Month = {Dec},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.html},
+    Number = {UCB/EECS-2009-173},
+    Abstract = {Recent research has explored using Datalog-based languages to 
+    express a distributed system as a set of logical invariants. Two properties
+     of distributed systems proved difficult to model in Datalog. First, the 
+     state of any such system evolves with its execution. Second, deductions 
+     in these systems may be arbitrarily delayed, dropped, or reordered by 
+     the unreliable network links they must traverse. Previous efforts 
+     addressed the former by extending Datalog to include updates, key 
+     constraints, persistence and events, and the latter by assuming ordered 
+     and reliable delivery while ignoring delay. These details have a semantics
+      outside Datalog, which increases the complexity of the language or its 
+      interpretation, and forces programmers to think operationally. We argue 
+      that the missing component from these previous languages is a notion of time.
+
+In this paper we present Dedalus, a foundation language for programming and
+ reasoning about distributed systems. Dedalus reduces to a subset of Datalog
+  with negation, aggregate functions, successor and choice, and admits an
+   explicit representation of time into the logic language. We show that 
+   Dedalus provides a declarative foundation for the two signature features 
+   of distributed systems: mutable state, and asynchronous processing and 
+   communication. Given these two features, we address three important 
+   properties of programs in a domain-specific manner: a notion of safety 
+   appropriate to non-terminating computations, stratified monotonic 
+   reasoning with negation over time, and efficient evaluation over time via 
+   a simple execution strategy. We also provide conservative syntactic checks 
+   for our temporal notions of safety and stratification. Our experience 
+   implementing full-featured systems in variants of Datalog suggests that 
+   Dedalus is well-suited to the specification of rich distributed services 
+   and protocols, and provides both cleaner semantics and richer tests of 
+   correctness.}
+}
+]
+
+author = [
+	Peter Alvaro
+	William Marczak
+	Neil Conway
+	Joseph M. Hellerstein
+	David Maier
+	Russell C Sears
+]
+
+cite = [
+
+book/SICP
+
+[2] P. Alvaro, T. Condie, N. Conway, K. Elmeleegy, J. M.
+Hellerstein, and R. C. Sears. BOOM: Data-Centric
+Programming in the Datacenter. Technical Report
+UCB/EECS-2009-113, EECS Department, University of
+California, Berkeley, Jul 2009.
+
+[3] P. Alvaro, T. Condie, N. Conway, J. M. Hellerstein, and
+R. Sears. I do declare: Consensus in a logic language. In
+NetDB, 2009.
+
+[4] M. P. Ashley-Rollman et al. Declarative programming for
+modular robots. In Workshop on Self-Reconfigurable
+Robots/Systems and Applications, 2007.
+
+[5] N. Belaramani, J. Zheng, A. Nayate, R. Soulé, M. Dahlin, and
+R. Grimm. Pads: A policy architecture for distributed storage
+systems. In NSDI, 2009.
+
+[6] E. Bertino, B. Catania, and R. Gori. Enhancing the Expressive
+Power of the U-Datalog Language. Theory and Practice of
+Logic Programming, 1(1):105–122, 2001.
+
+[7] D. Chimenti, R. Gamboa, R. Krishnamurthy, S. Naqvi,
+S. Tsur, and C. Zaniolo. The LDL System Prototype. IEEE
+Trans. on Knowl. and Data Eng., 2(1):76–90, 1990.
+
+[8] D. C. Chu, L. Popa, A. Tavakoli, J. M. Hellerstein, P. Levis,
+S. Shenker, and I. Stoica. The design and implementation of a
+declarative sensor network system. In 5th ACM Conference on
+Embedded networked Sensor Systems (SenSys), 2007.
+
+[9] J. G. Cleary, M. Utting, and R. Clayton. Data Structures
+Considered Harmful. In Australasian Workshop on
+Computational Logic, 2000.
+
+[10] M. A. Derr, S. Morishita, and G. Phipps. The Glue-Nail
+Deductive Database System: Design, Implementation, and
+Evaluation. The VLDB Journal, 3:123–160, 1994.
+
+[11] J. Eisner, E. Goldlust, and N. A. Smith. Dyna: a declarative
+language for implementing dynamic programs. In Proc. ACL,
+2004.
+
+[12] S. Greco and C. Zaniolo. Greedy Algorithms in Datalog with
+Choice and Negation. In JICSLP’98: Proceedings of the 1998
+Joint International Conference and Symposium on Logic
+Programming, pages 294–309, Cambridge, MA, USA, 1998.
+MIT Press.
+
+[13] T. Jim. Sd3: A trust management system with certified
+evaluation. Security and Privacy, IEEE Symposium on,
+0:0106, 2001.
+
+[14] M. S. Lam, J. Whaley, V. B. Livshits, M. C. Martin, D. Avots,
+M. Carbin, and C. Unkel. Context-sensitive program analysis
+as database queries. In PODS, 2005.
+
+[15] L. Lamport. Time, Clocks, and the Ordering of Events in a
+Distributed System. Communications of the ACM,
+21(7):558–565, 1978.
+
+[16] L. Lamport. The temporal logic of actions. ACM Toplas,
+16(3):872–923, May 1994.
+
+[17] N. Li and J. Mitchell. Datalog with constraints: A foundation
+for trust-management languages. In International Symposium
+on Practical Aspects of Declarative Languages, 2003.
+
+[18] M. Liu and J. Cleary. Declarative Updates in Deductive
+Databases. Journal of Computing and Information,
+1:1435–1446, 1994.
+
+[19] B. T. Loo, T. Condie, M. Garofalakis, D. E. Gay, J. M.
+Hellerstein, P. Maniatis, R. Ramakrishnan, T. Roscoe, and
+I. Stoica. Declarative Networking: Language, Execution and
+Optimization. In ACM SIGMOD, New York, NY, USA, 2006.
+
+[20] B. T. Loo, T. Condie, M. Garofalakis, D. E. Gay, J. M.
+Hellerstein, P. Maniatis, R. Ramakrishnan, T. Roscoe, and
+I. Stoica. Declarative networking. Communications of the
+ACM, 52(11):87–95, 2009.
+
+[21] B. T. Loo, J. M. Hellerstein, I. Stoica, and R. Ramakrishnan.
+Declarative routing: Extensible routing with declarative
+queries. In SIGCOMM, 2005.
+
+[22] L. Lu and J. G. Cleary. An Operational Semantics of Starlog.
+In Proc. Principles and Practice of Declarative Programming,
+pages 131–162. Springer-Verlag, 1999.
+
+[23] Y. Mao. On the declarativity of declarative networking. In
+NetDB, 2009.
+
+[24] S. Mullender, editor. Distributed Systems. Addison-Wesley,
+second edition, 1993.
+
+[25] I. S. Mumick and O. Shmueli. How expressive is stratified
+aggregation? Annals of Mathematics and Artificial
+Intelligence, 15(3-4):407–435, Sept. 1995.
+
+[26] J. A. Navarro and A. Rybalchenko. Operational Semantics for
+Declarative Networking. In PADL, pages 76–90, 2009.
+
+[27] K. A. Ross. Modular Stratification and Magic Sets for
+DATALOG Programs with Negation. In PODS, pages
+161–171, New York, NY, USA, 1990. ACM.
+
+[28] V. Saraswat, R. Jagadeesan, and V. Gupta. Timed Default
+Concurrent Constraint Programming. Journal of Symbolic
+Computation, 22(5-6):475–520, 1996.
+
+[29] V. A. Saraswat, R. Jagadeesan, and V. Gupta. Foundations of
+Timed Concurrent Constraint Programming. In LICS, pages
+71–80, 1994.
+
+[30] J. D. Ullman. Principles of Database and Knowledge-Base
+Systems: Volume II: The New Technologies. W. H. Freeman &
+Co., New York, NY, USA, 1990.
+
+[31] W. White et al. Scaling games to epic proportions. In
+SIGMOD, 2007.
+
+[32] W. Zhou, Y. Mao, B. T. Loo, and M. Abadi. Unified
+declarative platform for secure netwoked information systems.
+In ICDE, pages 150–161, 2009.
+
+]

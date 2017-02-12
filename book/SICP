@@ -1,0 +1,26 @@
+title = Structure and Interpretation of Computer Programs
+
+cover = https://upload.wikimedia.org/wikipedia/commons/9/9d/SICP_cover.jpg
+
+url = https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs
+
+author = [
+	author/Abelson
+	author/Sussman
+	title editors
+]
+
+license = license/CC/CC-SA-4 
+
+publicher = McGraw Hill
+
+edition = [
+	first = [
+		year = 1985
+		pub = MIT Press 
+	]
+	second = [
+		year = 1996
+		ISBN = 0-262-51087-1
+	]
+]
