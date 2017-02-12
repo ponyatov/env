@@ -1,4 +1,4 @@
-log.log : src.src ./exe.exe Makefile
+cpp.log : cpp.src ./exe.exe Makefile
 	./exe.exe < $< > $@ && tail $(TAIL) $@
 C = cpp.cpp ypp.tab.cpp lex.yy.c
 H = hpp.hpp ypp.tab.hpp meta.hpp
