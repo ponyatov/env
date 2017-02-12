@@ -1,0 +1,22 @@
+sym::class {
+	tag = str:'sym'		# type/class tag
+	str:val				# value: any data can be represented in text form !
+	num:id = 0			# unical object id
+	
+	new = {str:V,		# (token) constructor: init sym::item
+		val = V				# set value
+		nest = []			# nest[]ed elements (subtrees)
+		attr = {}			# attr{}ibutes
+		}
+		
+	pad = {int:n '\t'*n}					# left pad tree element
+	head = {'<%s:%s> @%s'%(tag,val,id++)}	# <T:V> @ID header
+	dump = {num@depth=0:					# \ tree dump
+		str:S = '\n'+pad(depth)+head()		# <T:V>
+			{i: S += '\n'+pad(depth+1)+		# attr{}ibutes dump
+				i ' ='+
+				i.dump(depth+2)
+			} | attr
+		for j in nest S += j.dump(depth+1) # net[]ed dump
+		^S }								# / return result
+}
