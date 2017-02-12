@@ -4,8 +4,15 @@ ABOUT	=	interactive SmallTalk-like / Pythonic syntax environment
 AUTHOR	=	credits/dponyatov
 LICENSE	=	GNU LesserGPL
 GITHUB	=	https://github.com/ponyatov/env
-LOGO	=	logo64x64
+LOGO	=	hedge
 
 README.md = [
-	# 
+	# ![logo](icon/LOGO64x64.png) MODULE
+	### TITLE
+
+	ABOUT
+
+	(c) AUTHOR , LICENCE
+
+	github: GITGUB
 ]
