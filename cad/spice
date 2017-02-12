@@ -1,0 +1,3 @@
+.doc (P)SPICE modeling inetrfaces
+
+engines = [ pspice ng-spice ]
