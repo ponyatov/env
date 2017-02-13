@@ -10,4 +10,3 @@ There are a lot of VM & platforms configurations in use.
 To fight this problem I wanted a tool that would gather all the VM building 
 jobs together in one reasonably convenient place. It should be both scriptable
 and interactive. 
-
