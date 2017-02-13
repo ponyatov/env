@@ -1,0 +1,24 @@
+bluebook {
+title = Smalltalk-80: The Language and Its Implementation
+
+icon = blue.jpg
+
+url = [
+http://www.mirandabanda.org/bluebook/
+]
+
+author = [
+Adele Goldberg
+David Robson
+]
+
+year = 1983
+
+pub = Addison-Wesley
+
+edition = 'Reprinted with corrections, July 1985'
+
+ISBN = 0-201-11371-6
+
+institut = vendor/Xerox geo/PaloAlto Research Center
+}

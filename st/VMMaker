@@ -1,0 +1,13 @@
+
+url = wiki = http://wiki.squeak.org/squeak/vmmaker
+
+author = [ Tim Rowledge ]
+
+In the distant past it was a major labour to create a set of VM code
+from Squeak.
+
+There are a lot of VM & platforms configurations in use.
+To fight this problem I wanted a tool that would gather all the VM building 
+jobs together in one reasonably convenient place. It should be both scriptable
+and interactive. 
+

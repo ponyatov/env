@@ -1,0 +1,19 @@
+icon = stbe.gif
+
+title = Smalltalk by Example: the Developer's Guide
+
+author = [ Alex Sharp ]
+
+pub = vendor/McGrawHill
+
+ISBN =  0079130364
+
+year =  1997
+
+This book covers all kinds of issues basic level, design, testing... I liked 
+it a lot. The code and the book as a single file containing everything are 
+available. Thank again Lukas Renggli for his effort for converting everything 
+from Word. Thanks a lot Alec and thanks vendor/McGrawHill 
+ They were really nice with us so think about it 
+if you hesitate to buy one of their books. Not all the publishers are that 
+open-minded.

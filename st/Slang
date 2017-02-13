@@ -1,0 +1,7 @@
+
+url = wiki = http://wiki.squeak.org/squeak/2267
+
+Slang is a small language with a Smalltalk syntax. 
+It can be easily translated to C source code. 
+Slang is used to store the Squeak VM code inside of Squeak. 
+See the methods in classes such as Interpreter for examples of Slang code.

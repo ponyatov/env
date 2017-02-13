@@ -1,0 +1,36 @@
+title = Squeak by Example
+
+author = [
+Andrew P. Black, 
+Stéphane Ducasse, 
+Oscar Nierstrasz 
+Damien Pollet
+Damien Cassou
+Marcus Denker
+]
+
+ISBN =  978-3-9523341-0-2
+HAL = inria-00441576
+
+icon = sbe.png
+
+url = [
+http://www.squeakbyexample.org/
+pdf = https://hal.inria.fr/+HAL+/file/SBE.pdf
+github = https://github.com/SquareBracketAssociates/SqueakByExample-english
+hal = https://hal.inria.fr/+HAL
+]
+
+pages = 304
+
+pub = Square Bracket Associates
+
+year = 2007
+
+It is intended for both students and developers, will guide you gently through 
+the Squeak language and environment by means of a series of examples and 
+exercises.	This book is made available under the Creative Commons 
+Attribution-ShareAlike 3.0 license. You can either download the PDF for 
+free, or you can buy a softcover copy from lulu.com. (You can also pay for 
+the PDF download from www.lulu.com, if you would like to make a contribution 
+to this effort, but you are under no obligation.)
