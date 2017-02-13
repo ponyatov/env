@@ -1,10 +1,15 @@
-title = Production Rendering
+title = Production Rendering: Design and Implementation
 editor = author/Stephenson
-edition = {
+edition = [
+{
 	pub = vendor/Springer
 	year = 2005
 	ISBN10= 1852338210
 	ISBN13= 978-1852338213
 	url = https://www.amazon.com/Production-Rendering-Ian-Stephenson/dp/1852338210
 }
+{
+	w2/google/books = https://books.google.ru/books?id=BCC5aTR34C4C
+}
+]
 lang = en
