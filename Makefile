@@ -1,3 +1,6 @@
+author/dponyatov.log : author/dponyatov ./exe.exe
+	./exe.exe < $< > $@
+
 cpp.log : src.src ./exe.exe Makefile py.log
 	./exe.exe < $< > $@ && tail $(TAIL) $@
 C = cpp.cpp ypp.tab.cpp lex.yy.c
