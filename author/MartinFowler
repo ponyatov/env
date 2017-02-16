@@ -29,3 +29,8 @@ Intentional Software,
 [ vendor/JetBrains Meta Programming System ] 
 [ vendor/Microsoft Software Factories ]
 ]
+
+cite = [
+'Most of our software logic is written in our programming languages,
+these give us the best environment to write and evolve such logic.'
+]
