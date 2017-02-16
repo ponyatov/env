@@ -1,0 +1,25 @@
+name = [ Martin Fowler ]
+
+about = https://martinfowler.com/aboutMe.html
+
+email = martin@martinfowler.com
+
+address = [
+name
+vendor/ThoughtWorks
+200 E. Randolph, 25th Floor
+goe/Chicago, IL 60601-6501
+geo/USA
+]
+
+posts = [
+LanguageWorkbench https://martinfowler.com/bliki/LanguageWorkbench.html
+articles https://martinfowler.com/articles/languageWorkbench.html
+]
+
+
+Language Workbenches = [
+Intentional Software, 
+JetBrains's Meta Programming System, and 
+Microsoft's Software Factories
+]
