@@ -1,0 +1,5 @@
+name = [ Adaptive Model ]
+url = https://martinfowler.com/dslCatalog/adaptiveModel.html
+
+Arrange blocks of code in a data structure
+	to implement an alternative computational model.
