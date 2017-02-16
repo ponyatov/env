@@ -14,12 +14,17 @@ geo/USA
 
 posts = [
 LanguageWorkbench https://martinfowler.com/bliki/LanguageWorkbench.html
-articles https://martinfowler.com/articles/languageWorkbench.html
+articles 
+{
+	en = https://martinfowler.com/articles/languageWorkbench.html
+	ru = http://www.maxkir.com/sd/languageWorkbenches.html
+}
+
 ]
 
 
 Language Workbenches = [
 Intentional Software, 
-JetBrains's Meta Programming System, and 
-Microsoft's Software Factories
+[ vendor/JetBrains Meta Programming System ] 
+[ vendor/Microsoft Software Factories ]
 ]
