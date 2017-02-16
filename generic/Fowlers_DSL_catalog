@@ -1,0 +1,166 @@
+url = https://martinfowler.com/dslCatalog/
+
+generic/DSL/Adaptive Model
+Arrange blocks of code in a data structure to implement an alternative 
+computational model.
+
+generic/DSL/Alternative Tokenization
+Alter the lexing behavior from within the parser.
+
+generic/DSL/Annotation
+Data about program elements, such as classes and methods, which can be 
+processed during compilation or execution.
+
+generic/DSL/BNF
+Formally define the syntax of a programming language.
+
+generic/DSL/Class Symbol Table
+Use a class and its fields to implement a symbol table in order to support 
+type-aware autocompletion in a statically typed language.
+
+generic/DSL/Closure
+A block of code that can be represented as an object (or first-class data 
+structure) and placed seamlessly into the flow of code by allowing it to 
+reference its lexical scope.
+
+generic/DSL/Construction Builder
+Incrementally create an immutable object with a builder that stores 
+constructor arguments in fields.
+
+generic/DSL/Context Variable
+Use a variable to hold context required during a parse.
+
+generic/DSL/Decision Table
+Represent a combination of conditional statements in a tabular form.
+
+generic/DSL/Delimiter-Directed Translation
+Translate source text by breaking it up into chunks (usually lines) and then
+parsing each chunk.
+
+generic/DSL/Dependency Network
+A list of tasks linked by dependency relationships. To run a task, you invoke 
+its dependencies, running those tasks as prerequisites.
+
+generic/DSL/Dynamic Reception
+Handle messages without defining them in the receiving class.
+
+generic/DSL/Embedded Interpretation
+Embed interpreter actions into the grammar, so that executing the parser causes
+ the text to be directly interpreted to produce the response.
+
+generic/DSL/Embedded Translation
+Embed output production code into the parser, so that the output is produced
+ gradually as the parse runs.
+
+generic/DSL/Embedment Helper
+An object that minimizes code in a templating system by providing all needed 
+functions to that templating mechanism.
+
+generic/DSL/Expression Builder
+An object, or family of objects, that provides a fluent interface over a normal
+command-query API.
+
+generic/DSL/Foreign Code
+Embed some foreign code into an external DSL to provide more elaborate behavior
+ than can be specified in the DSL.
+
+generic/DSL/Function Sequence
+A combination of function calls as a sequence of statements.
+
+generic/DSL/Generation Gap
+Separate generated code from non-generated code by inheritance.
+
+generic/DSL/Literal Extension
+Add methods to program literals.
+
+generic/DSL/Literal List
+Represent language expression with a literal list.
+
+generic/DSL/Literal Map
+Represent an expression as a literal map.
+
+generic/DSL/Macro
+Transform input text into a different text before language processing using 
+Templated Generation .
+
+generic/DSL/Method Chaining
+Make modifier methods return the host object, so that multiple modifiers can 
+be invoked in a single expression.
+
+generic/DSL/Model Ignorant Generation
+Hardcode all logic into the generated code so that there's no explicit 
+representation of the Semantic Model .
+
+generic/DSL/Model-Aware Generation
+Generate code with an explicit simulacrum of the semantic model of the DSL, 
+so that the generated code has generic-specific separation.
+
+generic/DSL/Nested Closure
+Express statement subelements of a function call by putting them into a closure
+ in an argument.
+
+generic/DSL/Nested Function
+Compose functions by nesting function calls as arguments of other calls.
+
+generic/DSL/Nested Operator Expression
+An operator expression that can recursively contain the same form of
+ expression (for example, arithmetic and Boolean expressions).
+
+generic/DSL/Newline Separators
+Use newlines as statement separators.
+
+generic/DSL/Notification
+Collects errors and other messages to report back to the caller.
+
+generic/DSL/Object Scoping
+Place the DSL script so that bare references will resolve to a single object.
+
+generic/DSL/Parse Tree Manipulation
+Capture the parse tree of a code fragment to manipulate it with DSL 
+processing code.
+
+generic/DSL/Parser Combinator
+Create a top-down parser by a composition of parser objects.
+
+generic/DSL/Parser Generator
+Build a parser driven by a grammar file as a DSL.
+
+generic/DSL/Production Rule System
+Organize logic through a set of production rules, each having a condition 
+and an action.
+
+generic/DSL/Recursive Descent Parser
+Create a top-down parser using control flow for grammar operators and recursive
+ functions for nonterminal recognizers.
+
+generic/DSL/Regex Table Lexer
+Implement a lexical analyzer using a list of regular expressions.
+
+generic/DSL/Semantic Model
+The model that's populated by a DSL.
+
+generic/DSL/State Machine
+Model a system as a set of explicit states with transitions between them.
+
+generic/DSL/Symbol Table
+A location to store all identifiable objects during a parse to resolve 
+references.
+
+generic/DSL/Syntax-Directed Translation
+Translate source text by defining a grammar and using that grammar to 
+structure translation.
+
+generic/DSL/Templated Generation
+Generate output by handwriting an output file and placing template callouts 
+to generate variable portions.
+
+generic/DSL/Textual Polishing
+Perform simple textual substitutions before more serious processing.
+
+generic/DSL/Transformer Generation
+Generate code by writing a transformer that navigates the input model 
+and produces output.
+
+generic/DSL/Tree Construction
+The parser creates and returns a syntax tree representation of the source 
+text that is manipulated later by tree-walking code.
