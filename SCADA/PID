@@ -1,0 +1,83 @@
+title	=	proportional–integral–derivative controller (PID controller)
+wiki	=	https://en.wikipedia.org/wiki/PID_controller
+
+about 	= '
+A title is a control loop feedback mechanism (controller) commonly used in 
+industrial control systems. A PID controller continuously calculates an error 
+value {\displaystyle e(t)} e(t) as the difference between a desired setpoint 
+and a measured process variable and applies a correction based on 
+proportional, integral, and derivative terms (sometimes denoted P, I, 
+and D respectively) which give their name to the controller type.
+'
+
+References=[
+
+Araki, M. "PID Control" (PDF).
+
+Bennett, Stuart (1992). A history of control engineering, 1930-1955. IET. p. p. 48. ISBN 978-0-86341-299-8.
+
+Veselý, V., Rosinová, D.: Robust PSD Controller Design, Editors: Fikar, M., Kvasnica, M., In Proceedings of the 18th International Conference on Process control, Tatranská Lomnica, Slovakia, 565–570, 2011.
+
+Bennett, Stuart (November 1984). "Nicholas Minorsky and the automatic steering of ships" (PDF). IEEE Control Systems Magazine. 4 (4): 10–15. doi:10.1109/MCS.1984.1104827. ISSN 0272-1708. Archived from the original (PDF) on June 8, 2011.
+
+(Bennett 1993, p. 67)
+
+Bennett, Stuart (1996). "A brief history of automatic control" (PDF). IEEE Control Systems Magazine. IEEE. 16 (3): 17–25. doi:10.1109/37.506394.
+
+Bennett, Stuart (June 1986). A history of control engineering, 1800-1930. IET. pp. 142–148. ISBN 978-0-86341-047-5.
+
+"A Brief Building Automation History". Retrieved 2011-04-04.
+
+Neuhaus, Rudolf. "Diode Laser Locking and Linewidth Narrowing" (PDF). Retrieved June 8, 2015.
+
+"Position control system" (PDF). Hacettepe University Department of Electrical and Electronics Engineering.
+
+Kebriaei, Reza; Frischkorn, Jan; Reese, Stefanie; Husmann, Tobias; Meier, Horst; Moll, Heiko; Theisen, Werner. "Numerical modelling of powder metallurgical coatings on ring-shaped parts integrated with ring rolling". Material Processing Technology. 213 (1): 2015–2032.
+
+"Introduction: PID Controller Design". University of Michigan.
+
+Tim Wescott (October 2000). "PID without a PhD" (PDF). EE Times-India.
+
+Ang, K.H., Chong, G.C.Y., and Li, Y. (2005). PID control system analysis, design, and technology, IEEE Trans Control Systems Tech, 13(4), pp.559-576. http://eprints.gla.ac.uk/3817/1/IEEE3.pdf
+
+Bechhoefer, John. "Feedback for Physicists: A Tutorial Essay On Control". Reviews of Modern Physics. APS Physics. 77 (3): 783–835. doi:10.1103/revmodphys.77.783.
+
+Atherton, Drek P (December 2014). "Almost Six Decades in Control Engineering". Control Systems, IEEE. doi:10.1109/MCS.2014.2359588.
+
+Li, Y., et al. (2004) CAutoCSD - Evolutionary search and optimisation enabled computer automated control system design, Int J Automation and Computing, vol. 1, No. 1, pp. 76-88. ISSN 1751-8520. http://userweb.eng.gla.ac.uk/yun.li/ga_demo/
+
+Jinghua Zhong (Spring 2006). "PID Controller Tuning: A Short Tutorial" (PDF). Retrieved 2011-04-04.
+
+Y Li, KH Ang, GCY Chong, Patents, software, and hardware for PID control: An overview and analysis of the current art, Control Systems, IEEE, 26 (1), 42-54. http://eprints.gla.ac.uk/3816/1/IEEE2pdf.pdf
+
+Li, Y. and Ang, K.H. and Chong, G.C.Y. (2006) PID control system analysis and design - Problems, remedies, and future directions. IEEE Control Systems Magazine, 26 (1). pp. 32-41. ISSN 0272-1708
+
+Cooper, Douglas. "Integral (Reset) Windup, Jacketing Logic and the Velocity PI Form". Retrieved 2014-02-18.
+
+Cooper, Douglas. "PI Control of the Heat Exchanger". Practical Process Control by Control Guru. Retrieved 2014-02-27.
+
+Yang, T. (June 2005). "Architectures of Computational Verb Controllers: Towards a New Paradigm of Intelligent Control". International Journal of Computational Cognition. Yang's Scientific Press. 3 (2): 74–101.
+
+Liang, Y.-L.(); et al. (2009). "Controlling fuel annealer using computational verb PID controllers". Proceedings of the 3rd international conference on Anti-Counterfeiting, security, and identification in communication. IEEE: 417–420.
+
+King, Myke. Process Control: A Practical Approach. Wiley, 2010, p. 52-78
+
+"Discrete PI and PID Controller Design and Analysis for Digital Implementation". Scribd.com. Retrieved 2011-04-04.
+
+"PID process control, a "Cruise Control" example". CodeProject. 2009. Retrieved 4 November 2012.
+
+Minorsky, Nicolas (1922). "Directional stability of automatically steered bodies". J. Amer. Soc. Naval Eng. 34 (2): 280–309. doi:10.1111/j.1559-3584.1922.tb04958.x.
+
+Liptak, Bela (1995). Instrument Engineers' Handbook: Process Control. Radnor, Pennsylvania: Chilton Book Company. pp. 20–29. ISBN 0-8019-8242-1.
+
+Tan, Kok Kiong; Wang Qing-Guo; Hang Chang Chieh (1999). Advances in PID Control. London, UK: Springer-Verlag. ISBN 1-85233-138-0.
+
+King, Myke (2010). Process Control: A Practical Approach. Chichester, UK: John Wiley & Sons Ltd. ISBN 978-0-470-97587-9.
+
+Van, Doren, Vance J. (July 1, 2003). "Loop Tuning Fundamentals". Control Engineering. Reed Business Information.
+
+Sellers, David. "An Overview of Proportional plus Integral plus Derivative Control and Suggestions for Its Successful Application and Implementation" (PDF). Archived from the original (PDF) on March 7, 2007. Retrieved 2007-05-05.
+
+Graham, Ron; Mike McHugh (10/03/2005). "FAQ on PID controller tuning". Mike McHugh. Archived from the original on February 6, 2005. Retrieved 2009-01-05. Check date values in: |date= (help)
+
+]

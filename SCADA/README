@@ -1,1 +1,6 @@
 url = wiki = https://en.wikipedia.org/wiki/SCADA
+
+std = [
+std/IEC/61131
+std/IEC/1131
+]

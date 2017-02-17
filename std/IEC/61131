@@ -1,0 +1,7 @@
+wiki = https://en.wikipedia.org/wiki/IEC_61131
+
+books = [
+R.W. Lewis, Modelling control systems using IEC 61499
+R.W. Lewis, Programming industrial control systems using IEC 1131-3
+K.H. John & M. Tiegelkamp, IEC 61131-3: Programming Industrial Automation Systems
+]
