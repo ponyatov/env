@@ -2,6 +2,8 @@ title = Amazon.com, Inc.
 
 url = https://www.amazon.com/
 
+wsdl = http://webservices.amazon.com/AWSECommerceService/2011-08-01/AWSECommerceService.wsdl
+
 api = [
 Использование Product Advertising API от Amazon @ https://habrahabr.ru/post/151917/
 ]
