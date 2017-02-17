@@ -4,3 +4,7 @@ std = [
 std/IEC/61131
 std/IEC/1131
 ]
+
+vendors = [
+vendor/[AllenBradley Siemens Oven]
+]
