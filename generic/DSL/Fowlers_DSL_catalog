@@ -1,3 +1,5 @@
+name = author/MartinFowler's DSL catalog
+
 url = https://martinfowler.com/dslCatalog/
 
 generic/DSL/Adaptive Model
@@ -164,3 +166,7 @@ and produces output.
 generic/DSL/Tree Construction
 The parser creates and returns a syntax tree representation of the source 
 text that is manipulated later by tree-walking code.
+
+extra:
+
+generic/DSL/Projectional Editing

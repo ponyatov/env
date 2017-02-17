@@ -1,0 +1,21 @@
+name = Projectional Editing
+url = https://martinfowler.com/bliki/ProjectionalEditing.html
+
+An alternative to SourceEditing is the idea that the core definition of a
+ system should be held in a model and edited through projections.
+
+To talk about this style of environment I find it handy to think in terms of 
+multiple representations of the system:
+
+representations  = [
+editable representation: what you edit in order to change the system.
+
+storage representation: the persistent record of the system definition.
+
+executable representation: what is executed to make the system run - the 
+executable.
+
+abstract representation: used to manipulate and reason about system definition.
+
+visualization representation: a non-editable view of the system definition.
+]
