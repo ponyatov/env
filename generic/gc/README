@@ -1,1 +1,98 @@
 Garbage Collection
+
+url = [
+
+Accurate Garbage Collection in Uncooperative Environments Revisited @
+http://www.filpizlo.com/papers/baker-ccpe09-accurate.pdf {
+author = [J. Baker, A. Cunei,∗ T. Kalibera, F. Pizlo, J. Vitek]
+
+cite =
+
+1. Jikes RVM. http://jikesrvm.org.
+
+2. Bowen Alpern, Maria Butrico, Anthony Cocchi, Julian Dolby, Stephen J. Fink, David Grove, and Ton Ngo.
+Experiences porting the Jikes RVM to Linux/IA32. In Samuel P. Midkiff, editor, Java Virtual Machine
+Research and Technology Symposium, pages 51–64. USENIX, 2002.
+
+3. Hezi Azatchi, Yossi Levanoni, Harel Paz, and Erez Petrank. An on-the-fly mark and sweep garbage
+collector based on sliding views. In Ron Crocker and Guy L. Steele Jr., editors, OOPSLA, pages 269–281.
+ACM, 2003.
+
+4. David F. Bacon, Perry Cheng, and V. T. Rajan. A real-time garbage collector with low overhead and
+consistent utilization. In Conference Record of the ACM Symposium on Principles of Programming
+Languages, pages 285–298, January 2003.
+
+5. David F. Bacon and Peter F. Sweeney. Fast static analysis of C++ virtual function calls. In Proceedings
+of the ACM Conference on Object-Oriented Programming Systems, Languages, and Applications, pages
+324–341, October 1996.
+
+6. H. G. Baker. List processing in real time on a serial computer. Communications of the ACM, 21(4):280–
+294, April 1978.
+
+7. Henry G. Baker. CONS should not CONS its arguments, part II: Cheney on the M.T.A.
+comp.lang.scheme.c newsgroup, 1994.
+
+8. Jason Baker, Antonio Cunei, Chapman Flack, Filip Pizlo, Marek Prochazka, Jan Vitek, Austin Armbuster,
+Edward Pla, and David Holmes. A real-time Java virtual machine for avionics. In Proceedings of the 12th
+IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), 2006.
+
+9. Jason Baker, Antonio Cunei, Filip Pizlo, and Jan Vitek. Accurate garbage collection in uncooperative
+environments with lazy pointer stacks. In International Conference on Compiler Construction (CC),
+2007.
+
+10. Joel F. Bartlett. Compacting garbage collection with ambiguous roots. Research Report 88/2, Western
+Research Laboratory, Digital Equipment Corporation, February 1988.
+
+11. Joel. F. Bartlett. Mostly-copying garbage collection picks up generations and C++. Technical Note
+TN-12, Western Research Laboratory, Digital Equipment Corporation, October 1989.
+
+12. Hans-Juergen Boehm. Space efficient conservative garbage collection. In Proceedings of the ACM
+Conference on Programming Language Design and Implementation, pages 197–206, June 1991.
+
+13. Hans-Juergen Boehm and Mark Weiser. Garbage collection in an uncooperative environment. Software—
+Practice and Experience, 18(9):807–820, September 1988.
+
+14. C--. http://www.cminusminus.org.
+
+15. Antonio Cunei. Use of Preemptive Program Services with Optimised Native Code. PhD thesis, University
+of Glasgow, December 2004.
+
+16. Jeffrey Dean, David Grove, and Craig Chambers. Optimization of object-oriented programs using static
+class hierarchy analysis. In Proceedings of the European Conference on Object-Oriented Programming,
+pages 77–101. Springer-Verlag, 1995.
+
+17. Amer Diwan, J. Eliot B. Moss, and Richard L. Hudson. Compiler support for garbage collection in a
+statically typed language. In Proceedings of the ACM Conference on Programming Language Design and
+Implementation, pages 273–282, July 1992.
+
+18. C. Flack, T. Hosking, and J. Vitek. Idioms in Ovm. Technical Report CSD-TR-03-017, Purdue University
+Department of Computer Sciences, 2003.
+
+19. Free Software Foundation. Gnu binutils. http://www.gnu.org/software/binutils/.
+
+20. Free Software Foundation. Gnu compiler collection. http://gcc.gnu.org/.
+21. Fergus Henderson. Accurate garbage collection in an uncooperative environment. In Proceedings of the
+ACM International Symposium on Memory Management, pages 256–263. ACM, February 2002.
+22. Roger Henriksson. Scheduling Garbage Colection in Embedded Systems. PhD thesis, Lund University,
+July 1998.
+23. Kevin Hoffman. Speedy TLS. http://www.kevinjhoffman.com/speedy-tls/.
+24. Simon Peyton Jones, Norman Ramsey, and Fermin Reig. C--: a portable assembly language that supports
+garbage collection. In International Conference on Principles and Practice of Declarative Programming,
+1999.
+25. Krzysztof Palacz, Jason Baker, Chapman Flack, Christian Grothoff, Hiroshi Yamauchi, and Jan Vitek.
+Engineering a common intermediate representation for the Ovm framework. The Science of Computer
+Programming, 57(3):357–378, September 2005.
+26. Filip Pizlo and Jan Vitek. An empirical evaluation of memory management alternatives for Real-Time
+Java. In Proceedings of the 27th IEEE Real-Time Systems Symposium (RTSS 2006), 5-8 December 2006,
+Rio de Janeiro, Brazil, 2006.
+27. Fridtjof Siebert. Constant-time root scanning for deterministic garbage collection. In International
+Conference on Compiler Construction (CC), pages 304–318, 2001.
+28. Fridtjof Siebert. The impact of realtime garbage collection on realtime java programming. In ISORC,
+pages 33–40, 2004.
+29. Frederick Smith and J. Gregory Morrisett. Comparing mostly-copying and mark-sweep conservative
+collection. In Proceedings of the ACM International Symposium on Memory Management, volume 34,
+pages 68–78. ACM, March 1998.
+30. Taichi Yuasa. Real-time garbage collection on general-purpose machines. 11(3):181–198, 1990.
+
+}
+]
