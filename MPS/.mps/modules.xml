@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/bI_lang/bI_lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/bI_lang/runtime/bI_lang.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/bI_lang/sandbox/bI_lang.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
