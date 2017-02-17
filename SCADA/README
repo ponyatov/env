@@ -8,3 +8,32 @@ std/IEC/1131
 vendors = [
 vendor/[AllenBradley Siemens Oven]
 ]
+
+References=[
+
+E. A. Parr, Industrial Control Handbook, Industrial Press Inc., 1999 ISBN 0-8311-3085-7
+
+M. A. Laughton, D. J. Warne (ed), Electrical Engineer's Reference book, 16th edition,Newnes, 2003 Chapter 16 Programmable Controller
+
+"The father of invention: Dick Morley looks back on the 40th anniversary of the PLC". Manufacturing Automation. 12 September 2008.
+
+Harms, Toni M. & Kinner, Russell H. P.E., Enhancing PLC Performance with Vision Systems. 18th Annual ESD/HMI International Programmable Controllers Conference Proceedings, 1989, p. 387-399.
+
+Maher, Michael J. Real-Time Control and Communications. 18th Annual ESD/SMI International Programmable Controllers Conference Proceedings, 1989, p. 431-436.
+
+Kinner, Russell H., P.E. Designing Programmable Controller Application Programs Using More than One Designer. 14th Annual International Programmable Controllers Conference Proceedings, 1985, p. 97-110.
+
+W. Bolton, Programmable Logic Controllers, Fifth Edition, Newnes, 2009 ISBN 978-1-85617-751-1, Chapter 1
+
+Keller, William L Jr. Grafcet, A Functional Chart for Sequential Processes, 14th Annual International Programmable Controllers Conference Proceedings, 1984, p. 71-96.
+
+PLC simulation reference
+
+Gregory K. McMillan, Douglas M. Considine (ed), Process/Industrial Instruments and Controls Handbook Fifth Edition, McGraw-Hill, 1999 ISBN 0-07-012582-1 Section 3 Controllers
+
+Erickson, Kelvin T. (1996). "Programmable logic controllers". Institute of Electrical and Electronics Engineers.
+
+Iqbal, S. (2008). "Programmable Logic Controllers (PLCs): Workhorse of Industrial Automation". 68-69. IEEEP Journal: 27–31.
+
+Petruzella,, Frank D. (2005). "Programmable logic controllers". Tata McGraw-Hill Education.
+]
