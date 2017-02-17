@@ -1,0 +1,66 @@
+title = Accurate Garbage Collection \
+	in Uncooperative Environments \
+	with Lazy Pointer Stacks
+	
+author = [
+[ Jason Baker, Antonio Cunei, Filip Pizlo, and Jan Vitek ]
+Computer Science Department
+Purdue University
+West Lafayette, IN 47906, geo/USA
+{baker29,cunei,filip,jv}@cs.purdue.edu
+]	
+
+pdf = BakerVitek.pdf
+url = http://janvitek.org/pubs/cc07.pdf
+
+References = [
+1. Free Software Foundation: Gnu compiler collection. (http://gcc.gnu.org/)
+2. boehm/weiser
+3. Boehm, H.J.: Space efficient conservative garbage collection. In: Proceedings of
+the ACM Conference on Programming Language Design and Implementation. Volume
+26. (1991) 197–206
+4. Baker, J., Cunei, A., Flack, C., Pizlo, F., Prochazka, M., Vitek, J., Armbuster,
+A., Pla, E., Holmes, D.: A real-time Java virtual machine for avionics. In: Proceedings
+of the 12th IEEE Real-Time and Embedded Technology and Applications
+Symposium (RTAS 2006), IEEE Computer Society (2006)
+5. Vitek, J., Baker, J., Flack, C., Fox, J., Grothoff, C., Holmes, D., Palacz, C., Pizlo,
+F., Yamauchi, H.: The Ovm Project. (http://www.ovmj.org)
+6. Palacz, K., Baker, J., Flack, C., Grothoff, C., Yamauchi, H., Vitek, J.: Engineering
+a common intermediate representation for the Ovm framework. The Science of
+Computer Programming 57(3) (2005) 357–378
+7. Flack, C., Hosking, T., Vitek, J.: Idioms in Ovm. Technical Report CSD-TR-03-
+017, Purdue University Department of Computer Sciences (2003)
+8. Henderson, F.: Accurate garbage collection in an uncooperative environment. In:
+Proceedings of the ACM International Symposium on Memory Management. Volume
+38., ACM (2002) 256–263
+9. SPEC: SPECjvm98 benchmarks (1998)
+10. Free Software Foundation: Gnu binutils. (http://www.gnu.org/software/
+binutils/)
+11. Pizlo, F., Vitek, J.: An empirical evaluation of memory management alternatives
+for Real-Time Java. In: Proceedings of the 27th IEEE Real-Time Systems Symposium
+(RTSS 2006), 5-8 December 2006, Rio de Janeiro, Brazil. (2006)
+12. Baker, H.G.: List processing in real time on a serial computer. Communications
+of the ACM 21(4) (1978) 280–294
+13. Bacon, D.F., Cheng, P., Rajan, V.T.: A real-time garbage collector with low
+overhead and consistent utilization. In: Conference Record of the ACM Symposium
+on Principles of Programming Languages. Volume 38. (2003) 285–298
+14. Siebert, F.: Constant-time root scanning for deterministic garbage collection. In:
+International Conference on Compiler Construction (CC). (2001) 304–318
+15. Bartlett, J.F.: Compacting garbage collection with ambiguous roots. Research
+Report 88/2, Western Research Laboratory, Digital Equipment Corporation (1988)
+16. Smith, F., Morrisett, J.G.: Comparing mostly-copying and mark-sweep conservative
+collection. In: Proceedings of the ACM International Symposium on Memory
+Management. Volume 34., ACM (1998) 68–78
+17. Bartlett, J.F.: Mostly-copying garbage collection picks up generations and C++.
+Technical Note TN-12, Western Research Laboratory, Digital Equipment Corporation
+(1989)
+18. Jones, S.P., Ramsey, N., Reig, F.: C--: a portable assembly language that supports
+garbage collection. In: International Conference on Principles and Practice of
+Declarative Programming. (1999)
+19. C--: (http://www.cminusminus.org)
+20. Diwan, A., Moss, J.E.B., Hudson, R.L.: Compiler support for garbage collection
+in a statically typed language. In: Proceedings of the ACM Conference on Programming
+Language Design and Implementation. Volume 27. (1992) 273–282
+21. Cunei, A.: Use of Preemptive Program Services with Optimised Native Code. PhD
+thesis, University of Glasgow (2004)
+]

@@ -1,0 +1,106 @@
+title	=	Accurate Garbage Collection in an Uncooperative Environment
+author	=	[
+Fergus Henderson
+Department of Computer Science and Software Engineering
+The University of geo/Melbourne
+Victoria 3010, geo/Australia
+fjh@cs.mu.oz.au
+]
+
+pdf = generic/gc/Henderson.pdf
+
+REFERENCES
+[1] Joel F. Bartlett. Mostly-Copying garbage collection
+picks up generations and C++. Technical Note
+TN–12, Digital, Western Research Laboratory, 1989.
+[2] Hans Boehm. Simple garbage-collector-safety. In
+Proceedings of the ACM SIGPLAN ’96 Conference on
+Programming Language Design and Implementation,
+1996.
+[3] Hans Boehm and David Chase. A proposal for
+garbage-collector-safe C compilation. Journal of C
+Language Translation, 4:126–141, December 1992.
+4] Hans Boehm and Mark Weiser. Garbage collection in
+an uncooperative environment. Software — Practice
+and Experience, 18:807–820, 1988.
+[5] William D. Clinger. Proper tail recursion and space
+efficiency. In Proceedings of the ACM SIGPLAN ’98
+Conference on Programming Language Design and
+Implementation, pages 174–185, 1998.
+[6] Robert Dewar. Mail to the GCC mailing list
+(<gcc@gcc.gnu.org>). URL: <http://gcc.gnu.org/
+ml/gcc/2001-07/msg01990.html>, July 2001.
+[7] Tyson Dowd, Zoltan Somogyi, Fergus Henderson,
+Thomas Conway, and David Jeffery. Run time type
+information in Mercury. In Proceedings of the 1999
+International Conference on the Principles and
+Practice of Declarative Programming, pages 224–243,
+Paris, France, September 1999.
+[8] Daniel R. Edelson and Ira Pohl. A copying collector
+for C++. In USENIX C++ Conference Proceedings,
+pages 85–102, 1991.
+[9] Daniel Ross Edelson. Dynamic storage reclamation in
+C++. Technical Report UCSC-CRL-90-19, UCSC,
+June 1990.
+[10] David Chase (et al?). GC FAQ (garbage collection
+frequently asked questions). URL:
+<http://www.iecc.com/gclist/GC-faq.html>.
+[11] Benjamin Goldberg. Tag-free garbage collection for
+strongly typed programming languages. In Proceedings
+of the ACM SIGPLAN ’91 Conference on
+Programming Language Design and Implementation,
+pages 165–176, Toronto, Ontario, Canada, June 26–28,
+1991.
+[12] David R. Hanson and Mukund Raghavachari. A
+machine-independent debugger. In Software —
+Practice and Experience, volume 26, pages 1277–1299,
+November 1996.
+[13] Fergus Henderson and Zoltan Somogyi. Compiling
+Mercury to high-level C code. In Nigel Horspool,
+editor, Proceedings of the 2002 International
+Conference on Compiler Construction, Grenoble,
+France, April 2002. Springer-Verlag.
+[14] Fergus Henderson, Zoltan Somogyi, and Thomas
+Conway. Compiling logic programs to C using GNU C
+as a portable assembler. In Proceedings of the ILPS
+’95 Postconference Workshop on Sequential
+Implementation Technologies for Logic Programming
+Languages, Portland, Oregon, December 1995.
+[15] Simon L. Peyton Jones, Cordy Hall, Kevin Hammond,
+Will Partian, and Phil Wadler. The Glasgow Haskell
+compiler: a technical overview. In Proceedings of the
+UK Joint Framework for Information Technology
+(JFIT) Technical Conference, Keele, 1993.
+[16] Simon Peyton Jones, Norman Ramsey, and Fermin
+Reig. C--: a portable assembly language that supports
+garbage collection. In International Conference on
+Principles and Practice of Declarative Programming,
+September 1999. Invited paper.
+[17] Wolfgang Schreiner. RT++ — higher order threads
+for C++, tutorial and reference manual. Technical
+Report 96-9, RISC-Linz, 1996. URL:
+<http://www.risc.uni-linz.ac.at/software/rt++/
+index 131.html>.
+[18] Zoltan Somogyi, Fergus Henderson, and Thomas
+Conway. The execution algorithm of Mercury, an
+efficient purely declarative logic programming
+language. Journal of Logic Programming, 1997.
+[19] David Stoutamire and Matt Kennel. Sather revisited:
+A high-performance free alternative to C++.
+Computers in Physics, 9:519–524, Sep/Oct 1995.
+[20] David Tarditi, Anurag Acharya, and Peter Lee. No
+assembly required: Compiling Standard ML to C.
+Technical Report CMU-CS-90-187, School of
+Computer Science, Carnegie Mellon University,
+Pittsburgh, PA 15213, November 1990.
+[21] Paul R. Wilson. Uniprocessor garbage collection
+techniques. In Yves Bekkers and Jacques Cohen,
+editors, Proceedings of International Workshop on
+Memory Management, volume 637 of Lecture Notes in
+Computer Science, pages 16–18, St Malo, France,
+September 1992. Springer-Verlag.
+[22] G. May Yip. Incremental, generational mostly-copying
+garbage collection in uncooperative environments.
+Technical Report 91/8, Digital, Western Research
+Laboratory, June 1991. Masters Thesis – MIT,
+Cambridge, MA, 1991.

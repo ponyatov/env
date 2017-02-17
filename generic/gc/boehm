@@ -1,3 +1,10 @@
 title	=	A garbage collector for C and C++ 
 author	=	Hans Boehm
 url		=	http://www.hboehm.info/gc/
+
+weiser	=	[
+title	=	Garbage collection in an uncooperative environment.
+Software—Practice and Experience 18(9) (1988) 807–820
+
+author = [ Boehm, H.J., Weiser, M. ]
+]
