@@ -3,6 +3,9 @@ url = wiki = https://en.wikipedia.org/wiki/SCADA
 std = [
 std/IEC/61131
 std/IEC/1131
+std/IEC/61850
+std/IEC/60870-5-101 src/IEC/60870-5-104
+protocol/DNP3
 ]
 
 vendors = [
