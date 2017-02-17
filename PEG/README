@@ -1,0 +1,8 @@
+PEG/packrat parsing
+
+url = [
+py : pyPEG @ https://fdik.org/pyPEG/]
+cpp : peg/leg @ http://piumarta.com/software/peg/
+] 
+
+pyPEG.install = pip install pypeg2
