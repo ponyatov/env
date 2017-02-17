@@ -1,0 +1,138 @@
+title = Precise Garbage Collection for C
+
+author = [
+[	Jon Rafkind		University of Utah	rafkind@cs.utah.edu ]
+[	Adam Wick		Galois, Inc.		awick@galois.com	]
+[	John Regehr		University of Utah	regehr@cs.utah.edu	]
+[	Matthew Flatt	University of Utah	mflatt@cs.utah.edu	]
+]
+
+url = https://www.cs.utah.edu/plt/publications/ismm09-rwrf.pdf
+
+References =[
+
+Andrew Appel. Compiling with Continuations. Cambridge University
+Press, 1992.
+
+Todd M. Austin, Scott E. Breach, and Gurindar S. Sohi. Efficient detection
+of all pointer and array access errors. Technical report, University of
+Wisconsin-Madison, December 1993.
+
+Jason Baker, Antonio Cunei, Filip Pizlo, and Jan Vitek. Accurate garbage
+collection in uncooperative environments with lazy pointer stacks. In
+International Conference on Compiler Construction, 2007.
+Steven J. Beaty. A technique for tracing memory leaks in C++. SIGPLAN
+OOPS Mess., 5(3):17–26, June 1994.
+
+B. N. Bershad, S. Savage, P. Pardyak, E. G. Sirer, M. Fiuczynski, D. Becker,
+
+S. Eggers, and C. Chambers. Extensibility, safety and performance in the
+SPIN operating system. In ACM Symp. on Operating Systems Principles,
+pages 267–284, December 1995.
+
+Hans-J. Boehm. Bounding space usage of conservative garbage collectors.
+In Proc. ACM Symp. on Principles of Programming Languages, pages
+93–100, 2002.
+
+Hans-J. Boehm. Space efficient conservative garbage collection. In ACM
+Conf. on Programming Language Design and Implementation, pages
+197–206, 2003.
+
+Hank Bromley. Lisp Lore: A Guide to Programming the Lisp Machine.
+Kluwer Academic Publishers, 1986.
+
+William D. Clinger. Proper tail recursion and space efficiency. In ACM
+Conf. on Programming Language Design and Implementation, pages
+174–185, 1998.
+
+Dinakar Dhurjati, Sumant Kowshik, Vikram Adve, and Chris Lattner. Memory
+safety without runtime checks or garbage collection. In Conf. on
+Languages, Compilers, and Tools for Embedded Systems, pages 69–80,
+2003.
+
+Chen Ding and Yutao Zhong. Compiler-directed run-time monitoring of
+program data access. In Proc. of the Workshop on Memory System
+Performance, pages 1–12, 2002.
+
+Nurit Dor, Michael Rodeh, and Mooly Sagiv. Detecting memory errors via
+static pointer analysis. In Workshop on Program Analysis for Software
+Tools and Engineering, pages 27–34, 1998.
+
+Dawson Engler, Benjamin Chelf, Andy Chou, and Seth Hallem. Checking
+system rules using system-specific, programmer-written compiler extensions.
+In ACM Symp. on Operating Systems Design and Implementation,
+2000.
+
+David Evans. Static detection of dynamic memory errors. In ACM Conf.
+on Programming Language Design and Implementation, pages 44–53,
+1996.
+
+Benjamin Goldberg. Tag-free garbage collection for strongly typed programming
+languages. In ACM Conf. on Programming Language Design
+and Implementation, pages 165–176, 1991.
+
+David L. Heine and Monica S. Lam. A practical flow-sensitive and contextsensitive
+C and C++ memory leak detector. In ACM Conf. on Programming
+Language Design and Implementation, pages 168–181, 2003.
+
+Fergus Henderson. Accurate garbage collection in an uncooperative environment.
+In ACM Intl. Symp. on Memory Management, pages 150–156,
+2002.
+
+Martin Hirzel, Amer Diwan, and Johannes Henkel. On the usefulness of
+type and liveness accuracy for garbage collection and leak detection.
+ACM Trans. Program. Lang. Syst., 24(6):593–624, 2002.
+HnxGC, 2009. http://hnxgc.harnixworld.com/.
+
+Galen C. Hunt and James R. Larus. Singularity: Rethinking the software
+stack. ACM SIGOPS Operating Systems Review, 41(2):37–49, 2007.
+Trevor Jim, Greg Morrisett, Dan Grossman, Michael Hicks, James Cheney,
+and Yanling Wang. Cyclone: A safe dialect of C. In USENIX Annual
+Technical Conference, pages 275–288, 2002.
+
+Dong-Heon Jung, Sung-Hwan Bae, Jaemok Lee, Soo-Mook Moon, and
+JongKuk Park. Supporting precise garbage collection in Java bytecodeto-C
+ahead-of-time compiler for embedded systems. In Intl. Conf. on
+Compilers, Architecture and Synthesis for Embedded Systems, pages 35–
+42, 2006.
+
+Managed Extensions for C++ Programming. Microsoft, 2004.
+George C. Necula, Scott McPeak, S. P. Rahul, and Westley Weimer. CIL:
+Intermediate language and tools for analysis and transformation of C
+programs. In Intl. Conf. on Compiler Construction, pages 213–228,
+2002a.
+
+George C. Necula, Scott McPeak, and Westley Weimer. CCured: type-safe
+retrofitting of legacy code. In ACM Symp. on Principles of Programming
+Languages, pages 128–139, 2002b.
+
+Scott M. Pike, Bruce W. Weide, and Joseph E. Hollingsworth. Checkmate:
+cornering C++ dynamic memory errors with checked pointers. In
+SIGCSE Technical Symposium on Computer Science Education, pages
+352–356, 2000.
+
+Gustavo Rodriguez-Rivera, Michael Spertus, and Charles Fiterman. A nonfragmenting
+non-moving, garbage collector. In ACM Intl. Symp. on
+Memory Management, pages 79–85, 1998.
+
+John D. Slingwine and Paul E. McKenney, 1995. Patent No. 5,442,758.
+Frederick Smith and Greg Morrisett. Comparing mostly-copying and marksweep
+conservative collection. In International Symposium on Memory
+Management, pages 68–78, 1998.
+
+Jan Sparud. Fixing some space leaks without a garbage collector. In Conference
+on Functional Programming Languages and Computer Architecture,
+pages 117–122, 1993.
+
+Sun Microsystems, Inc. JavaOS: A standalone Java environment,
+1997. http://www.javasoft.com/products/javaos/javaos.
+white.html.
+
+Adam Wick. Magpie: Precise Garbage Collection for C. PhD thesis,
+University of Utah, June 2006.
+
+Adam Wick and Matthew Flatt. Memory accounting without partitions. In
+ACM Intl. Symp. on Memory Management, 2004.
+]
+
+]
