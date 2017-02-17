@@ -1,0 +1,62 @@
+[
+
+ISBN13: 978-1420082791
+ISBN10: 1420082795
+
+title = The Garbage Collection Handbook: \
+	The Art of Automatic Memory Management \
+	(Chapman & Hall/CRC Applied Algorithms and Data Structures series) 
+	
+edition = 1st Edition
+
+author = [
+by Richard Jones  (Author), Antony Hosking  (Author), Eliot Moss (Author)
+]
+
+amazon = url = https://www.amazon.com/Garbage-Collection-Handbook-Management-Algorithms/dp/1420082795
+
+]
+
+[
+
+title = Garbage Collection: \
+	Algorithms for Automatic Dynamic Memory Management 
+	
+edition = 1st Edition
+
+author = [ by Richard Jones  (Author), Rafael D Lins (Author) ]
+
+ISBN-13: 978-0471941484
+ISBN-10: 0471941484
+
+amazon = url = https://www.amazon.com/Garbage-Collection-Algorithms-Automatic-Management/dp/0471941484
+]
+
+[
+amazon = url = https://www.amazon.com/Garbage-Collection-Distributed-Memory-Systems/dp/3659530050
+
+title = Garbage Collection in Distributed Memory Systems: \
+	Mark and Copy Garbage Collection (M&CGC) Algorithm Paperback 
+	
+date = April 30, 2014
+
+author = by Ali Al Hour (Author)
+{Part Time Lecturer in several Universities, 
+MSc in Computer Science from 
+Faculty of Computers and Information – 
+Cairo University – Egypt. 
+Research Interest: Distributed and Parallel Systems, Programming Languages, 
+and websites & trust.}
+
+pub = vendor/lambert
+
+Paperback: 76 pages
+Publisher: vendor/lambert 
+date: April 30, 2014
+Language: English
+ISBN-10: 3659530050
+ISBN-13: 978-3659530050
+Product Dimensions: 5.9 x 0.2 x 8.7 inches
+Shipping Weight: 5.6 ounces
+
+]
