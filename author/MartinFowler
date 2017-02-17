@@ -17,8 +17,12 @@ posts = [
 LanguageWorkbench https://martinfowler.com/bliki/LanguageWorkbench.html
 articles 
 {
-	en = https://martinfowler.com/articles/languageWorkbench.html
-	ru = http://www.maxkir.com/sd/languageWorkbenches.html
+ 	Language Workbenches: The Killer-App for Domain Specific Languages? @
+	en: https://martinfowler.com/articles/languageWorkbench.html
+	ru: http://www.maxkir.com/sd/languageWorkbenches.html
+	
+	A Language Workbench in Action - MPS @
+	https://martinfowler.com/articles/mpsAgree.html
 }
 
 ]
