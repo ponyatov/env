@@ -2,6 +2,7 @@ jar = antlr-4.6-complete.jar
 url = http://www.antlr.org/download/jar
 
 make = [
+antlr: bin/jar
 bin/jar:
 	wget -c -P bin url
 ]

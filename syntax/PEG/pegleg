@@ -1,0 +1,43 @@
+title = peg/leg — recursive-descent parser generators for C
+
+peg and leg are tools for generating recursive-descent parsers: programs that 
+perform pattern matching on text. They processes a Parsing Expression Grammar 
+(PEG) [Ford 2004] to produce a program that recognises legal sentences of that 
+grammar. peg processes PEGs written using the original syntax described by 
+Ford; leg processes PEGs written using slightly different syntax and 
+conventions that are intended to make it an attractive replacement for parsers 
+built with lex and yacc. Unlike lex and yacc, peg and leg support unlimited 
+backtracking, provide ordered choice as a means for disambiguation, and can 
+combine scanning (lexical analysis) and parsing (syntactic analysis) into a 
+single activity.
+
+version = 0.1.18
+tgz = peg-version.tar.gz
+
+url = [
+peg/leg @ http://piumarta.com/software/peg/
+tgz = http://piumarta.com/software/peg/tgz
+man @ http://piumarta.com/software/peg/peg.1.html
+]
+
+target_language = [ C, C++ ]
+
+make = [
+bin/leg.exe: \
+		src/peg-0.1.18/src/leg.c \
+		src/peg-0.1.18/src/tree.c \
+		src/peg-0.1.18/src/compile.c
+	gcc -o $@ $?
+src/peg-0.1.18/src/leg.c: gz/peg-0.1.18.tar.gz
+	cd src && tar zx < ../$<
+	touch $@
+gz/peg-0.1.18.tar.gz:
+	wget -c -P gz http://piumarta.com/software/peg/peg-0.1.18.tar.gz
+]
+
+References =[
+
+[Ford 2004] Bryan Ford, Parsing Expression Grammars: A Recognition-Based 
+Syntactic Foundation. ACM SIGPLAN Symposium on Principles of Programming 
+Languages (POPL), 2004.
+]

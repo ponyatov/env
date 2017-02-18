@@ -1,0 +1,6 @@
+url = [
+waxeye @ http://waxeye.org/
+manual @ 
+]
+
+target_language = [ C, C++ ,.. ]

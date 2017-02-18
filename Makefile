@@ -20,5 +20,13 @@
 #py.log : src.src $(PY) Makefile
 #	python -c "import core" < $< > $@ && tail $(TAIL) $@
 
-bin/antlr-4.6-complete.jar:
-	wget -c -P bin http://www.antlr.org/download/antlr-4.6-complete.jar
+bin/leg.exe: \
+		src/peg-0.1.18/src/leg.c \
+		src/peg-0.1.18/src/tree.c \
+		src/peg-0.1.18/src/compile.c
+	gcc -o $@ $?
+src/peg-0.1.18/src/leg.c: gz/peg-0.1.18.tar.gz
+	cd src && tar zx < ../$<
+	touch $@
+gz/peg-0.1.18.tar.gz:
+	wget -c -P gz http://piumarta.com/software/peg/peg-0.1.18.tar.gz

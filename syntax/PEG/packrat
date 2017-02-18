@@ -19,7 +19,7 @@ modern terms PEGs and packrat parsing, but much of their formal theory existed
 '
 
 parsers = [
-
-waxeye @ http://waxeye.org/
-
+ANTLR
+waxeye
+pegleg
 ]
