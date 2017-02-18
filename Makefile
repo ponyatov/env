@@ -19,3 +19,6 @@
 #PY += core/op.py  
 #py.log : src.src $(PY) Makefile
 #	python -c "import core" < $< > $@ && tail $(TAIL) $@
+
+bin/antlr-4.6-complete.jar:
+	wget -c -P bin http://www.antlr.org/download/antlr-4.6-complete.jar

@@ -1,0 +1,25 @@
+url = http://bford.info/packrat/
+title = The Packrat Parsing and Parsing Expression Grammars Page
+
+author = [
+name = Bryan Ford
+Phone:	+41 21 693 28 73
+Twitter:	@brynosaurus
+]
+
+abstract = '
+Parsing expression grammars (PEGs) are an alternative to context free grammars 
+for formally specifying syntax, and packrat parsers are parsers for PEGs that 
+operate in guaranteed linear time through the use of memoization. For a brief 
+technical summary see the Wikipedia entry on PEGs. For more in-depth 
+descriptions see the original PEG paper and packrat parsing paper, and 
+related papers below. Bryan Ford, the maintainer of this site, coined the 
+modern terms PEGs and packrat parsing, but much of their formal theory existed
+ earlier and all the more recent work on this topic is by others.
+'
+
+parsers = [
+
+waxeye @ http://waxeye.org/
+
+]
