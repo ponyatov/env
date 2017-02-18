@@ -27,7 +27,7 @@ bin/leg.exe: \
 		src/peg-0.1.18/src/leg.c \
 		src/peg-0.1.18/src/tree.c \
 		src/peg-0.1.18/src/compile.c
-	gcc -o $@ $?
+	gcc -o $@ $^
 src/peg-0.1.18/src/leg.c: gz/peg-0.1.18.tar.gz
 	cd src && tar zx < ../$<
 	touch $@

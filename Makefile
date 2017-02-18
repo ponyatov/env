@@ -20,11 +20,21 @@
 #py.log : src.src $(PY) Makefile
 #	python -c "import core" < $< > $@ && tail $(TAIL) $@
 
+tmp/dponyatov.log : author/dponyatov bin/bI.exe
+	bin/bI.exe < $< > $@ && tail $@
+
+C = tmp/bI.cpp core/sym_leg.cpp
+H = core/leg.hpp core/inc.hpp core/sym.hpp
+bin/bI.exe: $(C) $(H)
+	$(CXX) -I. -o $@ $(C)
+tmp/bI.cpp: syntax/bI/leg bin/leg.exe Makefile
+	bin/leg.exe -o $@ $<
+
 bin/leg.exe: \
 		src/peg-0.1.18/src/leg.c \
 		src/peg-0.1.18/src/tree.c \
 		src/peg-0.1.18/src/compile.c
-	gcc -o $@ $?
+	gcc -o $@ $^
 src/peg-0.1.18/src/leg.c: gz/peg-0.1.18.tar.gz
 	cd src && tar zx < ../$<
 	touch $@

@@ -1,0 +1,20 @@
+%{
+#include "core/leg.hpp"
+%}
+
+REPL = spaces
+	| ex	{ cout << Sym(yytext).dump(); }
+	| <.>	{ cout << "["<<yytext<<"]"; } 
+spaces = [ \t\r\n]+
+
+ex = scalar
+scalar = symbol 
+symbol = <[a-zA-Z0-9_]+>
+
+ex = ex eq ex	{ $$=$2; }
+
+eq = "="
+
+%%
+
+int main() { while(yyparse()); return 0; }

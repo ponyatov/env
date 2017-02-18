@@ -2,3 +2,8 @@ name	=	[ Dmitry Ponyatov ]
 email	=	<dponyatov@gmail.com>
 skype	=	skype://dmitry.ponyatov1
 website	=	github=https://github.com/ponyatov
+
+make = [
+tmp/dponyatov.log : author/dponyatov bin/bi.exe
+	bin/bi.exe < $< > $@ && tail $@
+]
