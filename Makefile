@@ -6,9 +6,10 @@ C = core/main.cpp tmp/bI.lexer.cpp tmp/bI.parser.cpp core/error.cpp \
 H = tmp/bI.parser.hpp core/lex.hpp core/yacc.hpp core/hpp.hpp core/inc.hpp \
 	core/sym.hpp core/env.hpp core/str.hpp core/op.hpp core/vector.hpp \
 	core/domain.hpp core/login.hpp core/email.hpp core/skype.hpp
-CXXFLAGS += -std=gnu++11 -I. -O0
+CXXFLAGS += -std=gnu++11 -I. -O0 -g0 -pipe
 bin/bI.exe: $(C) $(H)
-	$(CXX) $(CXXFLAGS) -o $@ $(C)
+	cat $(C) > cpp.cpp
+	$(CXX) $(CXXFLAGS) -o $@ cpp.cpp
 tmp/bI.lexer.cpp: syntax/bI/lexer.lex
 	flex -o$@ $<
 tmp/bI.parser.cpp: syntax/bI/parser.yacc
