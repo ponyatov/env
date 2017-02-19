@@ -13,7 +13,7 @@ struct Sym {
 	virtual string dump(int=0);	// \ dump in tree form
 	virtual string head();		// <T:V> header
 	string pad(int);			// / left pad tree element
-//	virtual Sym* eval(Sym*E);	// evaluate/compute object
+	virtual Sym* eval(Sym*E);	// evaluate/compute object
 //	virtual Sym* pfxadd();		// + A
 //	virtual Sym* pfxsub();		// - A
 //	virtual Sym* add(Sym*);		// A + B

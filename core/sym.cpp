@@ -22,15 +22,15 @@ string Sym::dump(int depth) { string S = "\n"+pad(depth)+head();
 		S += (*it)->dump(depth+1);
 	return S; }
 
-//Sym* Sym::lookup(string V) {
-//	if (attr.find(V)==attr.end()) return NULL; else return attr[V]; }
-//
-//Sym* Sym::eval(Sym*E) {
-//	Sym*L = E->lookup(val); if (L) return L;			// env{} lookup
-//	for (auto it=nest.begin(),e=nest.end();it!=e;it++)	// recursive eval
-//		(*it) = (*it)->eval(E);
-//	return this; }
-//
+Sym* Sym::lookup(string V) {
+	if (attr.find(V)==attr.end()) return NULL; else return attr[V]; }
+
+Sym* Sym::eval(Sym*E) {
+	Sym*L = E->lookup(val); if (L) return L;			// env{} lookup
+	for (auto it=nest.begin(),e=nest.end();it!=e;it++)	// recursive eval
+		(*it) = (*it)->eval(E);
+	return this; }
+
 //Sym* Sym::pfxadd() { return new Error(" + "+head()); }
 //Sym* Sym::pfxsub() { return new Error(" - "+head()); }
 //
