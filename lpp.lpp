@@ -1,7 +1,3 @@
-%{
-#include "hpp.hpp"
-%}
-%option noyywrap yylineno
 											// rex macro
 S	[\+\-]?
 N	[0-9]+
@@ -10,7 +6,6 @@ N	[0-9]+
 
 \?\=					TOC(Op,ASS)			// assert ?=
 
-\=						TOC(Op,EQ)			// operators
 \@						TOC(Op,AT)
 
 \+						TOC(Op,ADD)
@@ -24,8 +19,5 @@ N	[0-9]+
 {N}\.({N})?				TOC(Num,NUM)
 {N}						TOC(Int,INT)		// integer
 
-[a-zA-Z0-9_]+			TOC(Sym,SYM)		// symbol
 
 \n						TOC(Op,EOL)			// end of line
-[ \t\r]+				{}					// drop spaces
-.						{yyerror("lexer");}	// undef char

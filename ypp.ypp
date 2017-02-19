@@ -1,18 +1,10 @@
-%{
-#include "hpp.hpp"
-%}
 
-%defines %union { Sym*o; }
-
-%token <o> SYM INT NUM STR DOC	/* symbol integer number string docstring	*/
-%token <o> LP RP LQ RQ LC RC	/* brackets: () [] {}						*/
-%token <o> EQ AT TILD COMMA COLON	/* operators: = @ ~ , : */
+INT NUM STR DOC						/* integer number string docstring*/
+AT TILD COMMA COLON					/* @ ~ , : */
 %token <o> ADD SUB MUL DIV POW		/* + - * / ^ */
 %token <o> EOL						/* end-of-line */
 %token <o> ASS						/* assert: ?= */
  
-%type <o> ex scalar		/* expression scalar */
-
 %right ASS
 %left ADD SUB
 %left MUL DIV

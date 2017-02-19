@@ -1,0 +1,13 @@
+tmp/dponyatov.log: author/dponyatov bin/bI.exe
+	bin/bI.exe < $< > $@ && tail $(TAIL) $@
+C = tmp/bI.parser.cpp tmp/bI.lexer.cpp core/error.cpp \
+	core/sym.cpp 
+H = tmp/bI.parser.hpp core/hpp.hpp core/inc.hpp core/sym.hpp \
+	core/lex.hpp core/yacc.hpp
+CXXFLAGS += -std=gnu++11 -I.
+bin/bI.exe: $(C) $(H)
+	$(CXX) $(CXXFLAGS) -o $@ $(C)
+tmp/bI.lexer.cpp: syntax/bI/lexer.lex
+	flex -o$@ $<
+tmp/bI.parser.cpp: syntax/bI/parser.yacc
+	bison -o$@ $<
