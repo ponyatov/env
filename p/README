@@ -3,3 +3,11 @@
 
 use special private repository for you data or rsync on local media devices:
 DON'T PLACE THIS SUBDIRECTORY ON GITHUB OR ANY OTHER PUBLIC SITE OR MEDIA 
+
+what you should place here (don't forget chmod a-r for all files):
+- private crypto keys (public keys can be shared with git -f add public_key)
+- any API keys
+- all your job & live tasks
+- address books, contacts
+- notes
+- working data
