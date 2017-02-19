@@ -8,6 +8,7 @@
 //#include <cmath>
 #include <vector>
 #include <map>
+#include <unordered_set>	// required for infty dump blocking
 using namespace std;
 
 #endif // _H_INC
