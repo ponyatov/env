@@ -1,14 +1,14 @@
 #TeXlipse project settings
-#Sun Feb 19 22:00:54 GST 2017
+#Sun Feb 19 22:09:02 GST 2017
 markTmpDer=true
 builderNum=2
-outputDir=doc/gosplan/
+outputDir=doc/glushkov/
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
-tempDir=doc/gosplan
-mainTexFile=gosplan.tex
-outputFile=gosplan.pdf
+tempDir=doc/glushkov
+mainTexFile=ntpctl.tex
+outputFile=ntpctl.pdf
 langSpell=ru
 markDer=true
-srcDir=doc/gosplan/
+srcDir=doc/glushkov/
