@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sun Feb 19 22:00:54 GST 2017
+markTmpDer=true
+builderNum=2
+outputDir=doc/gosplan/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=doc/gosplan
+mainTexFile=gosplan.tex
+outputFile=gosplan.pdf
+langSpell=ru
+markDer=true
+srcDir=doc/gosplan/

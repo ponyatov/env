@@ -11,4 +11,7 @@ gz/
 src/
 p/
 cpp.cpp
+*.aux
+*.out
+*.synctex.gz
 
