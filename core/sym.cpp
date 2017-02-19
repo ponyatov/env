@@ -37,7 +37,7 @@ Sym* Sym::eval(Sym*E) {
 //Sym* Sym::add(Sym*o) { return new Error(head()+" + "+o->head()); }
 //Sym* Sym::sub(Sym*o) { return new Error(head()+" - "+o->head()); }
 //Sym* Sym::mul(Sym*o) { return new Error(head()+" * "+o->head()); }
-//Sym* Sym::div(Sym*o) { return new Error(head()+" / "+o->head()); }
+Sym* Sym::div(Sym*o) { return new Error(head()+" / "+o->head()); }
 //Sym* Sym::pow(Sym*o) { return new Error(head()+" ^ "+o->head()); }
 //
 //Sym* Sym::ass(Sym*o) {

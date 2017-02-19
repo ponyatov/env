@@ -1,5 +1,5 @@
 
-env
+env/author
 .end
 author/dponyatov = person:dponyatov
 % first = Dmitry

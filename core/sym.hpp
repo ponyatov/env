@@ -19,7 +19,7 @@ struct Sym {
 //	virtual Sym* add(Sym*);		// A + B
 //	virtual Sym* sub(Sym*);		// A - B
 //	virtual Sym* mul(Sym*);		// A * B
-//	virtual Sym* div(Sym*);		// A / B
+	virtual Sym* div(Sym*);		// A / B
 //	virtual Sym* pow(Sym*);		// A ^ B
 //	virtual Sym* ass(Sym*);		// assert A==B
 //	Sym* ok(Sym*);				// test:ok
