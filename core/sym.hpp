@@ -8,8 +8,8 @@ struct Sym {
 	Sym(string V);				// token /
 	vector<Sym*> nest;			// \ nest[]ed elements
 	Sym* push(Sym*);			// /
-//	map<string,Sym*> attr;		// \ attributes
-//	Sym* lookup(string);		// /
+	map<string,Sym*> attr;		// \ attributes
+	Sym* lookup(string);		// /
 	virtual string dump(int=0);	// \ dump in tree form
 	virtual string head();		// <T:V> header
 	string pad(int);			// / left pad tree element
@@ -25,9 +25,5 @@ struct Sym {
 //	Sym* ok(Sym*);				// test:ok
 //	Sym* fail(Sym*);			// test:fail
 };
-
-#include "core/op.hpp"
-#include "core/vector.hpp"
-#include "core/email.hpp"
 
 #endif // _H_SYM
