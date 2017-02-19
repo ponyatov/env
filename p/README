@@ -1,0 +1,5 @@
+# env/private
+### private data for env system
+
+use special private repository for you data or rsync on local media devices:
+DON'T PLACE THIS SUBDIRECTORY ON GITHUB OR ANY OTHER PUBLIC SITE OR MEDIA 
