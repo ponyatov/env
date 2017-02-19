@@ -1,6 +1,7 @@
 #ifndef _H_HPP
 #define _H_HPP
 
+#include "core/meta.hpp"
 #include "core/inc.hpp"
 
 #include "core/sym.hpp"

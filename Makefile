@@ -5,7 +5,7 @@ C = core/main.cpp tmp/bI.lexer.cpp tmp/bI.parser.cpp core/error.cpp \
 	core/domain.cpp core/login.cpp core/email.cpp core/skype.cpp
 H = tmp/bI.parser.hpp core/lex.hpp core/yacc.hpp core/hpp.hpp core/inc.hpp \
 	core/sym.hpp core/env.hpp core/str.hpp core/op.hpp core/vector.hpp \
-	core/domain.hpp core/login.hpp core/email.hpp core/skype.hpp
+	core/domain.hpp core/login.hpp core/email.hpp core/skype.hpp core/meta.hpp
 CXXFLAGS += -std=gnu++11 -I. -O0 -g0 -pipe
 bin/bI.exe: $(C) $(H)
 	cat $(C) > cpp.cpp
