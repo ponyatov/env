@@ -1,2 +1,2 @@
 #include "core/hpp.hpp"
-int main() { /*glob_init();*/ return yyparse(); }
+int main() { env_init(); return yyparse(); }

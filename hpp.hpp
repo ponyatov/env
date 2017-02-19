@@ -1,10 +1,4 @@
 
-struct Env:Sym { Env(string); };			// \ environment
-extern Env *glob;							// <env:global>
-extern void glob_init();					// / init
-
-struct Error:Sym { Error(string); Error(Sym*); };	// error
-
 struct Int:Sym {
 	Int(string); Int(long); long val;		// integer
 	string head(); Sym*eval(Sym*);

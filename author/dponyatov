@@ -1,3 +1,18 @@
+
+env
+.end
+author/dponyatov = person:dponyatov
+% first = Dmitry
+
+name	=	[ first=Dmitry second=Ponyatov ]
+
+.end
+
+author/dponyatov = person:dponyatov
+dponyatov/
+dponyatov/second = Ponyatov
+
+.end
 name	=	[ Dmitry Ponyatov ]
 email	=	<dponyatov@gmail.com>
 skype	=	skype://dmitry.ponyatov1

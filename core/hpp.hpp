@@ -4,6 +4,8 @@
 #include "core/inc.hpp"
 
 #include "core/sym.hpp"
+#include "core/env.hpp"
+#include "core/error.hpp"
 #include "core/str.hpp"
 #include "core/op.hpp"
 #include "core/vector.hpp"
