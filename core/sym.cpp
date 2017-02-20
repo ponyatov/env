@@ -16,19 +16,19 @@ string Sym::dump(int depth) { string S = "\n"+pad(depth)+head();
 		return S+"\n"+pad(depth+1)+"...";
 	dump_recur.insert(this);
 	// ////
-	for (auto it=attr.begin(),e=attr.end();it!=e;it++)
-		S += "\n"+pad(depth+1) + it->first + " =" + it->second->dump(depth+2);
-	for (auto it=nest.begin(),e=nest.end();it!=e;it++)
-		S += (*it)->dump(depth+1);
+	for (auto& field:attr)
+		S += "\n"+pad(depth+1) + field.first + " =" \
+			+ field.second->dump(depth+2);
+	for (auto& child:nest)
+		S += child->dump(depth+1);
 	return S; }
 
 Sym* Sym::lookup(string V) {
-	if (attr.find(V)==attr.end()) return NULL; else return attr[V]; }
+	if (attr.find(V)==attr.end()) return nullptr; else return attr[V]; }
 
 Sym* Sym::eval(Sym*E) {
 	Sym*L = E->lookup(val); if (L) return L;			// env{} lookup
-	for (auto it=nest.begin(),e=nest.end();it!=e;it++)	// recursive eval
-		(*it) = (*it)->eval(E);
+	for (auto& child:nest) child = child->eval(E);		// recursive eval
 	return this; }
 
 //Sym* Sym::pfxadd() { return new Error(" + "+head()); }
