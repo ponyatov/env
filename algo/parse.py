@@ -83,9 +83,11 @@ def p_ex_NUM(p):
     p[0] = p[1]
 def p_fn_def(p):
     ' ex : SYM SYM LP params RP LC vector RC '
-    p[0] = Fn(p[2].val) ; p[0].attr['ret'] = p[1]
-    for i in p[4].nest: p[0].attr[i.val] = i 
+    p[0] = Fn(p[2].val) ; p[0].attr['type'] = p[1]
+    for i in p[4].nest: p[0].attr[i.val] = Arg(i.val) 
     for j in p[7].nest: p[0] += j
+    glob.attr[p[0].val] = p[0]      # reg function
+    p[0].eval(p[0])                 # link variables by selflookup
 def p_fn_use(p):
     ' ex : SYM LP params RP'
     p[0] = Op('@') ; p[0] += p[1]
