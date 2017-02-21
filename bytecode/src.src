@@ -1,0 +1,9 @@
+# comment
+
+	nop
+	nop
+	halt
+	jmp 0
+
+.save bin.bin
+

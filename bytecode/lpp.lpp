@@ -3,3 +3,15 @@
 %}
 %option noyywrap yylineno
 %%
+\#.*			{}						/* drop comment */
+
+.save			{return SAVE;}
+
+nop				TOC(Nop,CMD)
+halt			TOC(Halt,CMD)
+
+[a-zA-Z0-9_\.]+	TOC(Sym,SYM)
+
+[ \t\r\n]+		{}						/* drop spaces */
+.				{yyerror("lexer");}		/* undetected char */
+

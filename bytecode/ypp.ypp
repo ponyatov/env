@@ -2,6 +2,11 @@
 #include "hpp.hpp"
 %}
 %defines %union { Sym*o; }
-%token <o> SYM
+%token <o> SYM CMD
+%token SAVE
+%type <o> ex
 %%
-REPL : | REPL SYM { cout << $2 << endl; }
+REPL : | REPL ex		{ cout << $2->dump(); }
+ex : SYM | CMD
+ex : SAVE SYM			{ $$=new Saver($2->val); }
+
