@@ -2,8 +2,8 @@
 
 	nop
 	nop
-	halt
 	jmp 0
+	halt
 
 .save bin.bin
 

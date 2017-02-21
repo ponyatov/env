@@ -2,11 +2,14 @@
 #include "hpp.hpp"
 %}
 %defines %union { Sym*o; }
-%token <o> SYM CMD
+%token <o> SYM NUM
+%token <o> NOP HALT JMP
 %token SAVE
-%type <o> ex
+%type <o> ex cmd0 cmd1
 %%
 REPL : | REPL ex		{ cout << $2->dump(); }
-ex : SYM | CMD
+ex : SYM | cmd0 | cmd1
+cmd0 : NOP | HALT
+cmd1 : JMP NUM			{ $$=$1; $$->reloc($2); }
 ex : SAVE SYM			{ $$=new Saver($2->val); }
 

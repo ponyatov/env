@@ -7,9 +7,11 @@
 
 .save			{return SAVE;}
 
-nop				TOC(Nop,CMD)
-halt			TOC(Halt,CMD)
+nop				TOC(Nop,NOP)
+halt			TOC(Halt,HALT)
+jmp				TOC(Jmp,JMP)
 
+[0-9]+			TOC(Int,NUM)
 [a-zA-Z0-9_\.]+	TOC(Sym,SYM)
 
 [ \t\r\n]+		{}						/* drop spaces */
