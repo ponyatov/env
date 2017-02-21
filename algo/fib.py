@@ -1,3 +1,5 @@
+import sys ; sys.stdout = open(sys.argv[0]+'.log','w')
+
 import ply.lex  as lex
 import ply.yacc as yacc
 
@@ -12,15 +14,26 @@ class Sym:
 		for i in self.attr: S += ',%s=%s' % (i, self.attr[i].head())
 		for j in self.nest: S += j.dump(depth + 1)
 		return S
+	def eval(self,E):
+		if self.val in E.attr: return E.attr[self.val]
+		for i in range(len(self.nest)): self.nest[i] = self.nest[i].eval(E)
+		return self
+class Env(Sym): tag = 'env'
+glob = Env('global')
 class Int(Sym):
 	tag = 'int'
 	def __init__(self, V): Sym.__init__(self, V) ; self.val = int(self.val)
+glob.attr['n']=Int(111)
 class Vector(Sym):
 	tag = 'vector'
 	def __init__(self): Sym.__init__(self, '[]')
 class Op(Sym):
 	tag = 'op'
 	def __init__(self, V): Sym.__init__(self, V)
+	def eval(self,E):
+		if self.val == '~':	return self.nest[0]
+		else:				Sym.eval(self, E)
+		return self
 class Fn(Sym):
 	tag = 'fn'
 	def __init__(self,V): Sym.__init__(self, V)
@@ -92,6 +105,11 @@ def p_REPL_none(p):	' REPL : '
 def p_REPL_recur(p):
 	' REPL : REPL ex '
 	print p[2]
+	print '-'*20
+	print p[2].eval(glob)
+	print '-'*20
+	print glob
+	print '='*40
 def p_ex_SYM(p):
 	' ex : SYM '
 	p[0] = p[1]
@@ -105,7 +123,7 @@ def p_fn_def(p):
 	for j in p[7].nest: p[0] += j
 def p_fn_use(p):
 	' ex : SYM LP params RP'
-	p[0] = Op('@') ; p[0] += Fn(p[1].val)
+	p[0] = Op('@') ; p[0] += p[1]
 	for i in p[3].nest: p[0] += i
 def p_params_comma(p):
 	' params : params COMMA ex '
@@ -163,12 +181,18 @@ def p_error(p): print 'parse/error', p
 
 lex.lex()
 yacc.yacc(debug=False, write_tables=False).parse('''
-def fib(n) {
-	if n<=0 ^0
-	if n<2 ^1
-	else ^ fib(n-1)+fib(n-2)
-}
-
-#def main(argc,argv) { print fib(11) }
+n-1
+# def fib(n) {
+# 	if n<=0 ^0
+# 	if n<2 ^1
+# 	else ^ fib(n-1)+fib(n-2)
+# }
+# 
+# def none(){}
+# 
+# def main() {
+# #none()
+# #print fib(11)
+# }
 ''')
 
