@@ -1,9 +1,9 @@
 # comment
 
 a
-	%b
-	/c
-	%d=1.2e3
-	/f:g
-	/[a c d]
+	% b
+	% d = 1200.0
+	/ c
+	/ f:g
+	/ [ a c d ]
 
