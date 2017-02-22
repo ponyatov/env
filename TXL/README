@@ -1,2 +1,31 @@
 title = The TXL Programming Language
 url = https://www.txl.ca/
+
+about =[
+TXL is a special-purpose programming language designed for creating, 
+manipulating and rapidly prototyping language
+descriptions, tools and applications. TXL is designed to allow explicit 
+programmer control over the interpretation, application,
+order and backtracking of both parsing and rewriting rules. Using first order 
+functional programming at the higher level and term
+rewriting at the lower level, TXL provides for flexible programming of 
+traversals, guards, scope of application and parameterized
+context. This flexibility has allowed TXL users to express and experiment 
+with both new ideas in parsing, such as robust, island
+and agile parsing, and new paradigms in rewriting, such as XML mark-up, 
+rewriting strategies and contextualized rules, without
+any change to TXL itself. This paper outlines the history, evolution and 
+concepts of TXL with emphasis on its distinctive style and
+philosophy, and gives examples of its use in expressing and applying recent 
+new paradigms in language processing.
+
+c 2006 Elsevier B.V. All rights reserved.
+]
+
+title = The TXL source transformation language
+author = [
+James R. Cordy
+School of Computing, Queen�s University, Kingston, Canada
+]
+url = http://www.sciencedirect.com/science/article/pii/S0167642306000669
+
