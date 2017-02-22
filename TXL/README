@@ -24,8 +24,8 @@ c 2006 Elsevier B.V. All rights reserved.
 
 title = The TXL source transformation language
 author = [
-James R. Cordy
-School of Computing, Queen�s University, Kingston, Canada
+James R. Cordy <cordy@cs.queensu.ca>
+School of Computing, Queen's University, Kingston, Canada
 ]
 url = http://www.sciencedirect.com/science/article/pii/S0167642306000669
 
