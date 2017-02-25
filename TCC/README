@@ -1,0 +1,4 @@
+title = Fabrice Bellard's Tiny C Compiler as backend/JIT compiler
+url = http://www.bellard.org/tcc/
+about = use TCC as backend compiler for JIT in-memory and .exe/.dll generation
+for i386/win32 target
