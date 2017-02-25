@@ -1,22 +1,20 @@
 %{
 #include "hpp.hpp"
 %}
-%option noyywrap yylineno
+%option noyywrap yylineno 8bit stack
+%option bison-bridge bison-locations
+	//%option reentrant 
 
 NUMB	([0-9]+)|([0-9]*\.[0-9]+)
 %%
 #[^\n]*			{} /* comment */
 ^\.end			{yyterminate();}
 
-{NUMB}			{ yylval.d = atof(yytext); return NUM; }
-[a-zA-Z0-9_]+	{ yylval.s = new string(yytext); return SYM; }
-[ \t\r]			{}	/* drop spaces */
+{NUMB}			{ yylval->d = atof(yytext); return NUM; }
+[a-zA-Z0-9_]+	{ yylval->s = new string(yytext); return SYM; }
 
 "?="			{ return TEST; }
-
-[()+\-*/]		{ return yytext[0]; }
-
-\n				{ return yytext[0]; }
-
+[()+\-*/\n]		{ return yytext[0]; }
+[ \t\r]			{}	/* drop spaces */
 .				{ yyerror("lexer"); }
 
