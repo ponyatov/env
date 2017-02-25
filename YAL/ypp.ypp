@@ -4,6 +4,7 @@
 %defines %union { double d; string *s; }
 %locations
 %pure-parser
+%parse-param {yyscan_t scanner}
 
 %token <d> NUM "number"
 %token <s> SYM "symbol"
