@@ -1,0 +1,8 @@
+OpenCL bindings with minimal mingw-w64
+
+url = http://arkanis.de/weblog/2014-11-25-minimal-opencl-development-on-windows
+
+Mingw-w64 custom build @ https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/
+
+Khronos OpenCL Registry @ https://www.khronos.org/registry/OpenCL/
+

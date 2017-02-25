@@ -1,0 +1,10 @@
+SPIR is a mapping from the OpenCL C programming language into LLVM IR.
+
+url = The first open standard intermediate language for parallel compute and graphics @ https://www.khronos.org/spir
+
+spec 1.0 @ https://www.khronos.org/registry/SPIR/specs/spir_spec-1.0-provisional.pdf
+
+SPIR-V is the first open standard, cross-API intermediate language for natively representing parallel compute and graphics and is incorporated as part of the core specification of both OpenCL 2.1 and OpenCL 2.2 and the new Vulkan graphics and compute API.
+
+SPIR-V exposes the machine model for OpenCL 1.2, 2.0, 2.1, 2.2 and Vulkan - including full flow control, and graphics and parallel constructs not supported in LLVM. SPIR-V also supports OpenCL C and OpenCL C++ kernel languages as well as the GLSL shader language for Vulkan (under development).
+
