@@ -4,3 +4,4 @@
 *.log
 ypp.tab.?pp
 lex.yy.c
+libtcc.dll
