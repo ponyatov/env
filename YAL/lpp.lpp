@@ -1,9 +1,10 @@
 %{
 #include "hpp.hpp"
 %}
-%option noyywrap yylineno 8bit stack
-%option bison-bridge bison-locations
-	//%option reentrant 
+%option noyywrap yylineno 
+	//8bit stack
+%option reentrant bison-bridge
+	//%option header-file="lex.yy.h"
 
 NUMB	([0-9]+)|([0-9]*\.[0-9]+)
 %%
@@ -16,5 +17,5 @@ NUMB	([0-9]+)|([0-9]*\.[0-9]+)
 "?="			{ return TEST; }
 [()+\-*/\n]		{ return yytext[0]; }
 [ \t\r]			{}	/* drop spaces */
-.				{ yyerror(NULL,NULL,"lexer"); }
+.				{ yyerror(NULL,"lexer"); }
 

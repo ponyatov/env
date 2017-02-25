@@ -7,12 +7,15 @@
 #include <cassert>
 using namespace std;
 
-extern int yylineno;
-extern char* yytext;
 #include "ypp.tab.hpp"
 typedef void* yyscan_t;
-extern int yylex(YYSTYPE*,YYLTYPE*);
-extern void yyerror(YYLTYPE*,yyscan_t,string);
+extern yyscan_t scanner;
+extern int yylex_init(yyscan_t* scanner);
+extern int yylex_destroy(yyscan_t yyscanner);
+extern int yylex(YYSTYPE*,yyscan_t);
+extern int yyget_lineno(yyscan_t);
+extern char* yyget_text(yyscan_t);
 extern int yyparse(yyscan_t);
+extern void yyerror(yyscan_t,string);
 
 #endif // _H_HPP

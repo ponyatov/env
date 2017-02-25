@@ -2,8 +2,8 @@
 #include "hpp.hpp"
 %}
 %defines %union { double d; string *s; }
-%locations
 %pure-parser
+%lex-param {yyscan_t scanner}
 %parse-param {yyscan_t scanner}
 
 %token <d> NUM "number"
