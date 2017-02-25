@@ -3,12 +3,13 @@ define program
 end define
 
 define statement
-	[id] | [number] | op
+	[id] | [number] 
+	
 end define
 
-define op
-	+ | - | *
-end define
+%define op
+%	+ | - | *
+%end define
 
-function main
-end function
+%function main
+%end function
