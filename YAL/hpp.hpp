@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <cmath>
+#include <cassert>
 using namespace std;
 
 extern int yylex();

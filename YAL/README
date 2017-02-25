@@ -1,6 +1,10 @@
 title = Yet Another Language
 author = Kim Thomas
 url = [
-https://www.youtube.com/watch?v=D58hhhcgEZQ
+
 http://talkplayfun.com/Bison-and-Flex
+
+install @ https://www.youtube.com/watch?v=D58hhhcgEZQ
+flex/bison @ https://www.youtube.com/watch?v=E6vuitIWpfM
+
 ]

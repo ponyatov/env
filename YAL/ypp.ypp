@@ -1,7 +1,28 @@
 %{
 #include "hpp.hpp"
 %}
-%defines %union { string *s; }
+%defines %union { double d; string *s; }
+
+%token <d> NUM
 %token <s> SYM
+%token TEST
+
+%type <d> exp
+
+%nonassoc TEST
+%left '+' '-'
+%left '*' '/'
+
 %%
-REPL : | REPL SYM { cout << $2 << endl; }
+REPL :
+	 | REPL '\n'
+	 | REPL exp { cout << " =>" << $2 << endl; }
+	 | REPL SYM { cout << *$2 << endl; }
+exp : NUM 			{ $$=$1; }
+	| '(' exp ')'	{ $$=$2; }
+	| exp '+' exp	{ $$=$1 + $3; }
+	| exp '-' exp	{ $$=$1 - $3; }
+	| exp '*' exp	{ $$=$1 * $3; }
+	| exp '/' exp	{ $$=$1 / $3; }
+	| exp TEST exp	{ assert($1==$3); $$=$1; }
+
