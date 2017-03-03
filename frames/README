@@ -1,0 +1,18 @@
+Minsky frames
+
+url = https://www.cs.jhu.edu/~vandurme/papers/A%20Unified%20Bayesian%20Model%20of%20Scripts%20Frames%20and%20Language%20-%20Ferraro%20and%20Van%20Durme%20-%20AAAI%202016.pdf
+title = A Unified Bayesian Model of Scripts, Frames and Language
+pdf = A Unified Bayesian Model of Scripts Frames and Language - Ferraro and Van Durme - AAAI 2016.pdf
+author = [
+Francis Ferraro
+Benjamin Van Durme
+]
+
+wiki = https://en.wikipedia.org/wiki/Frame_(artificial_intelligence)
+
+title = A Framework for Representing Knowledge
+author = author/MarvinMinsky
+year = 1974 
+
+institut = vendor/MIT/AI Laboratory
+url = http://web.media.mit.edu/~minsky/papers/Frames/frames.html
