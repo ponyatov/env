@@ -8,3 +8,5 @@ How to write an interpreter in Python @ https://www.youtube.com/watch?v=1h1mM7Vw
 
 github: https://github.com/keleshev/mini
 }
+
+install = pip install pytest parsimonious 
