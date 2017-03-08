@@ -22,8 +22,11 @@ class Mini:
         return children
     
     def number(self, node, children):
-        ' number = ~"[0-9]+" ~"\s*" '
+        ' number = ~"[0-9]+" _ '
         return int(node.text)
+    
+    def _(self, node, children):
+        ' _ = ~"\s*" '
  
 def test_hello():
     assert True
@@ -32,7 +35,7 @@ def test_class():
     assert Mini() != Mini()
 
 def test_empty():
-    assert Mini().eval('') == [] 
+    assert Mini().eval('') == []
     
 def test_numbers():
     assert Mini().eval('42') == [42]
