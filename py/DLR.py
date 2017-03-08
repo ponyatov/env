@@ -1,7 +1,4 @@
-# # import operator as op
- 
 from parsimonious.grammar import Grammar
-# from __builtin__ import str
 
 class Mini:
     
@@ -20,8 +17,16 @@ class Mini:
         return method(node, [self.eval(n) for n in node])
     
     def program(self, node, children):
-        ' program = number * '
+        ' program = expr * '
         return children
+    
+    def expr(self, node, children):
+        ' expr = number / name '
+        return children[0]
+    
+    def name(self, node, children):
+        ' name = ~"[a-z]+" _ '
+        return self.env[node.text.strip()]
     
     def number(self, node, children):
         ' number = ~"[0-9]+" _ '
@@ -44,4 +49,4 @@ def test_numbers():
     assert Mini().eval('42 12') == [42 , 12]
 
 def test_vars():
-    assert Mini(env={'a':42}).eval('a') == [42]
+    assert Mini(env={'a':42}).eval('a ') == [42]
