@@ -4,6 +4,8 @@ from parsimonious.grammar import Grammar
 # from __builtin__ import str
 
 class Mini:
+    
+    def __init__(self, env={}): self.env = env
      
     def parse(self, source):
         grammar = '\n'.join(j.__doc__
@@ -40,3 +42,6 @@ def test_empty():
 def test_numbers():
     assert Mini().eval('42') == [42]
     assert Mini().eval('42 12') == [42 , 12]
+
+def test_vars():
+    assert Mini(env={'a':42}).eval('a') == [42]
