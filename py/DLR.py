@@ -8,7 +8,7 @@ class Mini:
         grammar = '\n'.join(j.__doc__
             for i, j in self.__class__.__dict__.items()
             if not i.startswith('__') and j.__doc__)
-        print grammar
+#         print grammar
         return Grammar(grammar)['program'].parse(source)
 
     def eval(self, source):
@@ -21,8 +21,17 @@ class Mini:
         return children
     
     def expr(self, node, children):
-        ' expr = number / name '
+        ' expr = assign / number / name  '
         return children[0]
+    
+    def assign(self, node, children):
+        ' assign = lvalue "=" _ expr '
+        lvalue, _, _, expr = children
+        self.env[lvalue] = expr ; return expr
+    
+    def lvalue(self, node, children):
+        ' lvalue = ~"[a-z]+" _ '
+        return node.text.strip()
     
     def name(self, node, children):
         ' name = ~"[a-z]+" _ '
@@ -50,3 +59,4 @@ def test_numbers():
 
 def test_vars():
     assert Mini(env={'a':42}).eval('a ') == [42]
+    assert Mini().eval('a=2 \n a') == [2, 2]

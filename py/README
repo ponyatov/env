@@ -3,8 +3,7 @@ experimental language frontend runs on top of cPython2 as DLR
 mini language sample {
 core idea described in
 
-How to write an interpreter in Python @ https://www.youtube.com/watch?v=1h1mM7VwNGo
-(c) Vladimir Keleshev
+How to write an interpreter (c) Vladimir Keleshev @ https://www.youtube.com/watch?v=1h1mM7VwNGo
 
 github: https://github.com/keleshev/mini
 }
