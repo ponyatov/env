@@ -1,0 +1,12 @@
+env_clone = clone latest stable master branch on env/bI system
+
+D:
+cd \w\
+git clone -o gh https://github.com/ponyatov/env.git
+cd env
+
+env_update = update env/bI from master branch
+
+D:
+cd \w\env
+git pull gh master

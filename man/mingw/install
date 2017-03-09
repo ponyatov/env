@@ -1,0 +1,20 @@
+title = Minimalist vendor/GNU compilers and utils for Windows
+
+en: Download installer from 
+ru: Скачайте программу-установщик:
+http://www.mingw.org/
+
+en: Install packages:
+ru: Установите пакеты: 
+[
+gcc
+g++
+make
+flex
+bison
+wget
+]
+
+Add system environment variable:[
+	PATH += C:\MinGW\bin;C:\MinGW\msys\1.0\bin
+]

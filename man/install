@@ -1,0 +1,14 @@
+env/bI system install:
+
+required software:
+
+man/mingw/install
+man/git/install
+man/gvim/install
+man/python/install
+[ man/java/install man/eclipse/install ]
+
+clone latest stable master branch of env system from github:
+man/git/github/clone
+
+git/bitbucket/create

@@ -1,0 +1,10 @@
+title = bitbucket
+
+create = create your private project on bitbucket
+
+D:
+cd \w\env
+git clone -o bb bitbucket.org/yourlogin/p
+
+bb is [b]it[b]ucket
+p is [p]rivate
