@@ -3,7 +3,9 @@ import operator
 
 class Mini:
     
-    def __init__(self, env={}): self.env = env
+    def __init__(self, env={}):
+        self.env = env
+        self.env['sum'] = lambda *args: sum(args)
      
     def parse(self, source):
         grammar = '\n'.join(j.__doc__
@@ -22,8 +24,17 @@ class Mini:
         return children
     
     def expr(self, node, children):
-        ' expr = infix / assign / number / name  '
+        ' expr = call / infix / assign / number / name  '
         return children[0]
+    
+    def call(self, node, children):
+        ' call = name "(" _ args _ ")" '
+        name, _, _, args, _, _ = children
+        return name(*args)
+        
+    def args(self, node, children):
+        ' args = expr* '
+        return children
     
     def infix(self, node, children):
         ' infix = "(" _ expr _ op _ expr _ ")" '
@@ -77,3 +88,8 @@ def test_vars():
 def test_ops():
     assert Mini().eval('(42 +2)') == [44] 
     assert Mini().eval('(42 +(2*4))') == [50] 
+
+def test_funcall():
+    assert Mini().eval('sum(10 20)') == [30] 
+    assert Mini().eval('sum(10 20 30)') == [60] 
+    assert Mini().eval('sum()') == [0] 
