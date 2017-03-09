@@ -1,4 +1,5 @@
 from parsimonious.grammar import Grammar
+import operator
 
 class Mini:
     
@@ -21,8 +22,20 @@ class Mini:
         return children
     
     def expr(self, node, children):
-        ' expr = assign / number / name  '
+        ' expr = infix / assign / number / name  '
         return children[0]
+    
+    def infix(self, node, children):
+        ' infix = "(" _ expr _ op _ expr _ ")" '
+        _, _, expr1, _, op, _, expr2, _, _ = children
+        return op(expr1, expr2)
+        
+    def op(self, node, children):
+        ' op = ~"[\+\-\*\/]" '
+        return {
+            '+':operator.add, '-':operator.sub,
+            '*':operator.mul, '/':operator.div
+            }[node.text]
     
     def assign(self, node, children):
         ' assign = lvalue "=" _ expr '
@@ -60,3 +73,7 @@ def test_numbers():
 def test_vars():
     assert Mini(env={'a':42}).eval('a ') == [42]
     assert Mini().eval('a=2 \n a') == [2, 2]
+
+def test_ops():
+    assert Mini().eval('(42 +2)') == [44] 
+    assert Mini().eval('(42 +(2*4))') == [50] 
