@@ -1,0 +1,8 @@
+title = bI metaprogramming language 
+
+about = bI based on [
+- Pythonic syntax
+- SmallTalk dynamic symbolic object subsystem and interactive environment
+- Prolog logic programming abilities
+- Erlang high available clustering  
+]

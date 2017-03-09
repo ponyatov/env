@@ -1,6 +1,22 @@
 en:
 
-Goals of env/bI system design:
+Goals of env/bI system design: [
+- metaprogramming, computer language design and translator development
+- symbolic and numeric computations
+- clustering and cloud computing
+- complex engineering systems design: CAM/CAM/CAE environment
+- multiplatform software development using source generation to C++/Java/ECMA/... 
+]
+
+Includes : [
+
+- man/bI
+- translator into pure C for MCU targets cross-compilation
+- rich GUI/CAD/Visualization environment with MVC architecture
+- parallel programming subsystem for clustering and cloud computing
+- bridge to symbolic math engine and FEL solvers for CAE applications
+
+]
 
 ru:
 
