@@ -1,0 +1,35 @@
+title = Core Science Library
+
+env/bI includes science library for basic set of knowledge in areas: [
+math [
+- algebra
+- technical math
+- numerical computations
+- statistics
+]
+physics [
+- electronics
+- structural analisys
+- mechanics
+- masspectrometry and accelerators
+]
+chemistry []
+] 
+based on set of well known books (in russian).
+
+Also it includes some important applications [
+
+computer science [
+- algorithms and data structures
+- programming languages and compiler design
+- multitasking and clustering
+]
+
+CAL: [c]omputer [a]ided [l]earning
+
+Business applications [
+- time and project management 
+- logistics
+]
+
+]
