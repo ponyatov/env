@@ -24,8 +24,14 @@ class Mini:
         return children
     
     def expr(self, node, children):
-        ' expr = call / infix / assign / number / name  '
+        ' expr = if / call / infix / assign / number / name  '
         return children[0]
+    
+    def zif(self, node, children):
+        ' if = "if" _ expr _ "then" _ expr _ "else" _ expr '
+        _,_,cond,_,_,_,cons,_,_,_,alt = children
+        print cond,cons,alt
+        return cons if cond else alt
     
     def call(self, node, children):
         ' call = name "(" _ args _ ")" '
@@ -93,3 +99,6 @@ def test_funcall():
     assert Mini().eval('sum(10 20)') == [30] 
     assert Mini().eval('sum(10 20 30)') == [60] 
     assert Mini().eval('sum()') == [0] 
+
+def test_if():
+    assert Mini().eval('if 1 then 42 else 12') == [42]
