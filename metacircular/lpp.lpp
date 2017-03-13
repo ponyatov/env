@@ -1,5 +1,26 @@
 %{
 #include "hpp.hpp"
+string LexString;
 %}
 %option noyywrap yylineno
+%x doc str
 %%
+#[^\n]*				{}					/* comment			*/
+
+\"				{BEGIN(doc); LexString="";}
+<doc>\n			{BEGIN(INITIAL); yylval.o = new Sym(LexString+' '); return DOC;}
+<doc>\"			{BEGIN(INITIAL); yylval.o = new Sym(LexString); return DOC;}
+<doc>.			{LexString+=yytext[0];}
+
+'				{BEGIN(str); LexString="";}
+<str>'			{BEGIN(INITIAL); yylval.o = new Sym(LexString); return SYM;}
+<str>.			{LexString+=yytext[0];}
+
+\/					TOC(Sym,DIV)		/* / subelement		*/
+\%					TOC(Sym,MOD)		/* % attribute		*/
+\(					TOC(Sym,LP)
+\)					TOC(Sym,RP)
+\=					TOC(Sym,EQ)
+[a-zA-Z0-9_.]+		TOC(Sym,SYM)		/* symbol			*/
+[ \t\r\n]+			{}					/* drop spaces		*/
+.					{yyerror("lexer");}	/* undetected char	*/

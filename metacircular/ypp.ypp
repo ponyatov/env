@@ -2,6 +2,18 @@
 #include "hpp.hpp"
 %}
 %defines %union { Sym*o; }
-%token <o> SYM
+%token <o> SYM DOC				/* symbol docstring	*/
+%token <o> DIV MOD EQ LP RP		/* / % = ( )		*/
+%type <o> ex
+
+%left DIV
+%left MOD
+%left EQ
+%left DOC
 %%
-REPL : | REPL SYM { cout << $2 << endl; }
+REPL : | REPL ex		{ cout << $2->dump() << endl; }
+ex : SYM
+ex : ex DOC				{ $$=$1; $$->doc=$2->val; }
+ex : LP ex RP			{ $$=$2; }
+ex : ex DIV ex			{ $$=$1->push($3); }
+ex : ex MOD ex EQ ex	{ $$=$1->attr($3,$5); }

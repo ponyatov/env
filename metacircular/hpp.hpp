@@ -2,10 +2,21 @@
 #define _H_HPP
 
 #include <iostream>
+#include <sstream>
 #include <cstdlib>
+#include <vector>
+#include <map>
 using namespace std;
 
-struct Sym {};
+struct Sym {
+	string val;									// value
+	string doc;									// docstring
+	Sym(string);								// token constructor
+	vector<Sym*> nest; Sym* push(Sym*);			// nest[]ed elements = vector
+	map<string,Sym*> env; Sym* attr(Sym*,Sym*);	// attr{}ibutes = environment
+	virtual string dump(int=0,string head="");	// homoiconic dump
+	string pad(int);
+};
 
 extern int yylex();
 extern int yylineno;

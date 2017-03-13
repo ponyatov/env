@@ -1,2 +1,16 @@
 # metacircular interpreter
 
+files "anyki
+	% doc = ' source file package ' # 0x3f1118
+	/ src.src " source " # 0x3f12c0
+	/ log.log " log " # 0x3f13e0
+	/ ypp.ypp " grammar parser " # 0x3fb280
+	/ lpp.lpp " tokenizing lexer " # 0x3fb3c8
+	/ hpp.hpp " headers " # 0x3fb540
+	/( cpp.cpp " C++ core " # 0x3fb6a0
+		/ (include / hpp.hpp)
+	)
+	/ Makefile " build script " # 0x3fb7c0
+	/ .gitignore " ignore file masks for .git " # 0x3fb8e0
+	/ bat.bat " (g)vim helper /win32/ " # 0x3fba00
+
