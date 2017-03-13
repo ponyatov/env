@@ -2,6 +2,14 @@
 #include "hpp.hpp"
 %}
 %defines %union { Sym*o; }
-%token <o> SYM
+%token <o> SYM NUM DOT Q DEF
+%type <o> ex
 %%
-REPL : | REPL SYM { cout << $2->dump() << endl; }
+REPL :
+	| REPL ex	{ stack.push($2); }
+	| REPL DOT	{ stack.clear(); }
+	| REPL Q	{ cout << stack.dump() << endl; }
+ex : SYM
+ex : NUM
+ex : DEF SYM	{ $$=new Fn($2->val); }
+

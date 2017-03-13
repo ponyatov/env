@@ -2,7 +2,19 @@
 #include "hpp.hpp"
 %}
 %option noyywrap yylineno
+S [\+\-]?
+N [0-9]+
 %%
 #[^\n]*			{}
+
+{S}{N}							TOC(Int,NUM)
+{S}{N}(\.[0-9]*)?([eE]{S}{N})?	TOC(Num,NUM)
+
+[a-zA-Z0-9_]+	TOC(Sym,SYM)
+
+\.				TOC(Sym,DOT)
+\?				TOC(Sym,Q)
+\:\:			TOC(Sym,DEF)
+
 [ \t\r\n]+		{}
 .				{yyerror("lexer");}
