@@ -1,0 +1,8 @@
+%{
+#include "hpp.hpp"
+%}
+%option noyywrap yylineno
+%%
+#[^\n]*			{}
+[ \t\r\n]+		{}
+.				{yyerror("lexer");}
