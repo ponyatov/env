@@ -13,6 +13,10 @@ class Sym:
     def __mod__(self, o):   self.attr[o.val] = o; return o
     def __iadd__(self,o):   self.nest.append(o); return self
     def eval(self): return self
+    def pfxadd(self): return Error()
+    
+class Error(Sym):
+    def __init__(self,V): 
 
 class Int(Sym):
     def __init__(self,V):
