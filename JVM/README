@@ -1,6 +1,9 @@
 Truffle/Graaal runtime DLR for JVM
 
-Turoails on DLR:
+Tutorials on DLR:
+
+Are We There Yet? Simple Language-Implementation Techniques for the 21st Century @
+http://stefan-marr.de/papers/ieee-soft-marr-et-al-are-we-there-yet/
 
 Mumbler Language @
 http://cesquivias.github.io/blog/2014/10/13/writing-a-language-in-truffle-part-1-a-simple-slow-interpreter/
