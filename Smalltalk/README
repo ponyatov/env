@@ -1,0 +1,16 @@
+Smalltalk-80 implementation & resources
+
+book {
+title = Smalltalk-80: The Language and Its Implementation 
+author = [Adele Goldberg , David Robson]
+year = 1983, 
+publisher = Addison-Wesley, 
+ISBN = 0-201-11371-6 
+edition = "Reprinted with corrections, July 1985"
+
+url = http://www.mirandabanda.org/bluebook/
+pdf = http://stephane.ducasse.free.fr/FreeBooks/BlueBook/Bluebook.pdf
+}
+
+http://stefan-marr.de/papers/ieee-soft-marr-et-al-are-we-there-yet/
+
