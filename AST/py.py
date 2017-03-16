@@ -1,6 +1,6 @@
 import os, sys
 
-# class tree
+############## class tree ##############
 
 class AST:
     tag = ''
@@ -21,7 +21,8 @@ class Num(AST):
 class Sym(AST): tag = 'sym'
 class Op(AST): tag = 'op'
 
-# parser 
+############## parser ##############
+ 
 import ply.lex  as lex
 import ply.yacc as yacc
 
