@@ -1,0 +1,15 @@
+JavGraal + Truffle : DLR for Java
+
+comments @ https://news.ycombinator.com/item?id=9371931 {
+
+Graal is a JIT compiler done in Java, it has nothing to do with DLR.
+Graal is being used by Project Sumatra (GPGPU) and JRuby.
+
+Truffle is more of a AST manipulation framework for nodes
+that can be fed into Graal for compilation.
+
+Then there are those meta-circular JVMs like JikesRVM which are done in Java.
+
+}
+
+
